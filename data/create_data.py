@@ -33,7 +33,7 @@ for i in range(1000):
     student['watched'] = getWatched(student['level'])    
     students.append(student)
 
-with open("data/students.json", "w") as f:
+with open("students.json", "w") as f:
     json.dump(students, f, indent=2)
 
 print("Generated 1000 students")
