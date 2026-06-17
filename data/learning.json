@@ -1,0 +1,41 @@
+{
+    "courses": {
+        "A1": {
+            "reading": 22,
+            "writing": 18,
+            "listening": 20,
+            "speaking": 16
+        },
+        "A2": {
+            "reading": 25,
+            "writing": 20,
+            "listening": 24,
+            "speaking": 18
+        },
+        "B1": {
+            "reading": 28,
+            "writing": 23,
+            "listening": 26,
+            "speaking": 21
+        },
+        "B2": {
+            "reading": 30,
+            "writing": 26,
+            "listening": 28,
+            "speaking": 24
+        },
+        "C1": {
+            "reading": 32,
+            "writing": 28,
+            "listening": 30,
+            "speaking": 26
+        },
+        "C2": {
+            "reading": 34,
+            "writing": 30,
+            "listening": 32,
+            "speaking": 28
+        }
+    },
+    "exam_level_link": "https://platform.com/exams/a1"
+}

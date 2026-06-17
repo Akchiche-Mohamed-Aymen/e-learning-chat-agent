@@ -1,21 +1,39 @@
-import requests
-
-def fetch_weather(city='Ouargla'):
-    """returns the current weather in a given city."""
-    try:
-        url = f"""https://api.openweathermap.org/data/2.5/forecast?q={city}&units=imperial&appid=66f4afc899fe0ee3d2e2d847ee431037"""
-        response = requests.get(url)
-        response.raise_for_status()
-        response = response.json()
-        weather = response['list'][0]['main']['temp']
-        return f"The current weather in {city} is {weather}°F."
-    except requests.exceptions.Timeout:
-        return "Error: The request timed out."
-    except requests.exceptions.ConnectionError:
-        return "Error: Failed to connect to the server."
-    except requests.exceptions.HTTPError as http_err:
-        return f"HTTP error occurred: {http_err}"
-    except requests.exceptions.RequestException as err:
-        return f"An error occurred: {err}"
+import json
+import random
+data = json.load(open("data/learning.json"))['courses']
+def getWatched(level):
+    current_level = data[level]
+    watched = {}
+    for key , value in current_level.items():
+        watched[key] = random.randint(0, value)
+    return watched
+first_names = [
+    "Mohamed", "Ahmed", "Yacine", "Amine", "Sofiane",
+    "Sarah", "Aya", "Nour", "Meriem", "Lina"
+]
 
 
+last_names = [
+    "Akchiche", "Benali", "Bouzid", "Mansouri",
+    "Cherif", "Khaldi", "Hamdi", "Brahimi"
+]
+
+levels = ["A1", "A2", "B1", "B2", "C1", "C2"]
+
+students = []
+
+for i in range(1000):
+    first = random.choice(first_names)
+    last = random.choice(last_names)
+    student = {
+        "name": f"{first} {last}",
+        "email": f"{first}.{last}@gmail.com",
+        "phone": f"+2135{random.randint(10000000,99999999)}",
+        "level": random.choice(levels)}
+    student['watched'] = getWatched(student['level'])    
+    students.append(student)
+
+with open("data/students.json", "w") as f:
+    json.dump(students, f, indent=2)
+
+print("Generated 1000 students")
