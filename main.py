@@ -2,7 +2,6 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from tools import tools_list
 from langchain.agents import create_agent
 from pydantic import BaseModel
-from langchain.agents import create_agent
 
 class Answer(BaseModel):
     answer: str

@@ -22,6 +22,7 @@ try:
         persist_directory="./chroma_db",
         collection_name="english_learning_platform"
     )
+
 except Exception as e:
     print(f" {e}")
 #py embed_knowledge.py
