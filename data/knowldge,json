@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "title": "Platform Overview",
+    "content": "This platform is an AI-powered English learning system offering structured courses from A1 to C2 based on CEFR standards. It includes courses, exams, progress tracking, and instructor support."
+  },
+  {
+    "id": 2,
+    "title": "User Account Policy",
+    "content": "Users must register with a valid email address. Each user is allowed one account only. Sharing accounts or credentials is strictly prohibited."
+  },
+  {
+    "id": 3,
+    "title": "Privacy Policy",
+    "content": "User data is stored securely and encrypted. Personal information is never sold or shared with third parties except when required by law."
+  },
+  {
+    "id": 4,
+    "title": "Security Guidelines",
+    "content": "Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension."
+  },
+  {
+    "id": 5,
+    "title": "Community Guidelines",
+    "content": "Respectful communication is required. Harassment, spam, or offensive behavior will result in account restrictions."
+  },
+  {
+    "id": 6,
+    "title": "Course Structure Overview",
+    "content": "Each CEFR level (A1-C2) contains four skill courses: Reading, Writing, Listening, and Speaking."
+  },
+  {
+    "id": 7,
+    "title": "Learning Path Rules",
+    "content": "Students must complete all four skill courses in a level before progressing to the next level."
+  },
+  {
+    "id": 8,
+    "title": "Reading Course Description",
+    "content": "Reading courses focus on comprehension, vocabulary expansion, inference, and understanding written texts in different contexts."
+  },
+  {
+    "id": 9,
+    "title": "Writing Course Description",
+    "content": "Writing courses develop grammar accuracy, sentence structure, paragraph writing, essay writing, and formal communication skills."
+  },
+  {
+    "id": 10,
+    "title": "Listening Course Description",
+    "content": "Listening courses train learners to understand spoken English in conversations, lectures, and real-life situations."
+  },
+  {
+    "id": 11,
+    "title": "Speaking Course Description",
+    "content": "Speaking courses focus on fluency, pronunciation, vocabulary usage, and interactive communication."
+  },
+  {
+    "id": 12,
+    "title": "A1 Level Description",
+    "content": "Beginner level where learners understand and use basic everyday expressions and simple sentences."
+  },
+  {
+    "id": 13,
+    "title": "A2 Level Description",
+    "content": "Elementary level where learners can communicate simple tasks and routine information."
+  },
+  {
+    "id": 14,
+    "title": "B1 Level Description",
+    "content": "Intermediate level where learners can handle everyday situations and express opinions on familiar topics."
+  },
+  {
+    "id": 15,
+    "title": "B2 Level Description",
+    "content": "Upper-intermediate level where learners can interact fluently and produce detailed written and spoken content."
+  },
+  {
+    "id": 16,
+    "title": "C1 Level Description",
+    "content": "Advanced level where learners can understand complex texts and express ideas fluently and precisely."
+  },
+  {
+    "id": 17,
+    "title": "C2 Level Description",
+    "content": "Proficiency level where learners can understand virtually everything and express themselves naturally like native speakers."
+  },
+  {
+    "id": 18,
+    "title": "Exam Overview",
+    "content": "Each level includes a final exam evaluating all four skills: reading, writing, listening, and speaking."
+  },
+  {
+    "id": 19,
+    "title": "Exam Passing Criteria",
+    "content": "Students must achieve at least 70 percent to pass the level exam."
+  },
+  {
+    "id": 20,
+    "title": "Exam Retake Policy",
+    "content": "Students may retake a failed exam after a waiting period of 14 days."
+  },
+  {
+    "id": 21,
+    "title": "Exam Structure Details",
+    "content": "Exams include multiple choice questions, writing tasks, listening comprehension, and oral evaluation."
+  },
+  {
+    "id": 22,
+    "title": "Grading System",
+    "content": "Grades are calculated from exams, quizzes, assignments, and participation activities."
+  },
+  {
+    "id": 23,
+    "title": "Certification Policy",
+    "content": "Certificates are awarded after completing all courses and passing the final exam."
+  },
+  {
+    "id": 24,
+    "title": "Refund Policy",
+    "content": "Refunds are available within 14 days if less than 20 percent of course content has been accessed."
+  },
+  {
+    "id": 25,
+    "title": "Payment Policy",
+    "content": "All courses must be paid before full access is granted."
+  },
+  {
+    "id": 26,
+    "title": "Subscription Model",
+    "content": "Users can subscribe monthly or annually to access platform content."
+  },
+  {
+    "id": 27,
+    "title": "Instructor Responsibilities",
+    "content": "Instructors must provide accurate educational content and respond to student questions professionally."
+  },
+  {
+    "id": 28,
+    "title": "Instructor Communication Rules",
+    "content": "All communication must be done through official platform channels."
+  },
+  {
+    "id": 29,
+    "title": "Instructor Evaluation Policy",
+    "content": "Instructor performance is evaluated based on student feedback and engagement metrics."
+  },
+  {
+    "id": 30,
+    "title": "Instructor Content Guidelines",
+    "content": "Instructors must ensure content aligns with CEFR standards and platform curriculum."
+  },
+  {
+    "id": 31,
+    "title": "Student Guidelines",
+    "content": "Students must complete lessons in order and respect platform rules."
+  },
+  {
+    "id": 32,
+    "title": "Student Study Recommendations",
+    "content": "Students are encouraged to study daily and revise previous lessons regularly."
+  },
+  {
+    "id": 33,
+    "title": "Attendance Policy",
+    "content": "Consistent participation improves learning outcomes and retention."
+  },
+  {
+    "id": 34,
+    "title": "Learning Analytics",
+    "content": "The platform tracks student progress across all four skills to provide personalized recommendations."
+  },
+  {
+    "id": 35,
+    "title": "Progress Tracking System",
+    "content": "Student progress is measured by completed lessons, quiz scores, and exam results."
+  },
+  {
+    "id": 36,
+    "title": "Technical Support Policy",
+    "content": "Users can contact support for login issues, payment problems, or technical bugs."
+  },
+  {
+    "id": 37,
+    "title": "Platform Availability",
+    "content": "The platform is available 24/7 except during maintenance periods."
+  },
+  {
+    "id": 38,
+    "title": "Mobile Access Policy",
+    "content": "The platform supports mobile, tablet, and desktop devices."
+  },
+  {
+    "id": 39,
+    "title": "Content Protection Policy",
+    "content": "All course materials are protected and cannot be redistributed."
+  },
+  {
+    "id": 40,
+    "title": "Anti-Cheating Policy",
+    "content": "Cheating during exams or quizzes will result in penalties or account suspension."
+  },
+  {
+    "id": 41,
+    "title": "Lesson Format",
+    "content": "Lessons include video content, quizzes, and practice exercises."
+  },
+  {
+    "id": 42,
+    "title": "Exercise System",
+    "content": "Each lesson includes interactive exercises to reinforce learning."
+  },
+  {
+    "id": 43,
+    "title": "Adaptive Learning System",
+    "content": "The platform adapts content difficulty based on student performance."
+  },
+  {
+    "id": 44,
+    "title": "Recommendation Engine",
+    "content": "The system recommends lessons based on student weaknesses and progress."
+  },
+  {
+    "id": 45,
+    "title": "Course Completion Rules",
+    "content": "A course is marked complete when all lessons and assessments are finished."
+  },
+  {
+    "id": 46,
+    "title": "Skill Balance Policy",
+    "content": "Students are encouraged to balance all four skills equally."
+  },
+  {
+    "id": 47,
+    "title": "Vocabulary Development Policy",
+    "content": "Vocabulary is introduced progressively across all levels."
+  },
+  {
+    "id": 48,
+    "title": "Grammar Learning Policy",
+    "content": "Grammar is taught from simple structures in A1 to complex forms in C2."
+  },
+  {
+    "id": 49,
+    "title": "Speaking Practice Policy",
+    "content": "Speaking practice includes pronunciation exercises and conversation simulations."
+  },
+  {
+    "id": 50,
+    "title": "Listening Practice Policy",
+    "content": "Listening exercises include real-life conversations and academic lectures."
+  },
+  {
+    "id": 51,
+    "title": "Writing Practice Policy",
+    "content": "Writing tasks include essays, summaries, and structured paragraphs."
+  },
+  {
+    "id": 52,
+    "title": "Reading Practice Policy",
+    "content": "Reading exercises include articles, stories, and comprehension tests."
+  }
+]

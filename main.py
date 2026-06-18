@@ -20,7 +20,6 @@ final answer should be as human format , not just the combination of outputs fro
 """
 try:
     agent = create_agent(llm, tools = tools_list , system_prompt=system_prompt, response_format=Answer)
-    response = agent.invoke({"messages": [{"role": "user", "content": "A student named oLivIa has an exam tomorrow in Ouargla. What is his current grade and what will the weather be like there during the exam day in celsius?"}]})
-    print(response['structured_response'])
+    
 except Exception as e:
     print(f"An error occurred: {e}")
