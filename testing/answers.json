@@ -1,1 +1,166 @@
-[]
+[
+  {
+    "rag": "To pass the level exam, students must achieve at least 70 percent.",
+    "expected": "Students must achieve at least 70% to pass the exam."
+  },
+  {
+    "rag": "Yes, you may retake a failed exam. However, you will need to observe a waiting period of 14 days before you can attempt it again.",
+    "expected": "Yes, students can retake a failed exam after a waiting period of 14 days."
+  },
+  {
+    "rag": "Student grades are determined by a combination of factors, including exams, quizzes, assignments, and participation activities. Additionally, student progress is tracked through completed lessons, quiz scores, and exam results.",
+    "expected": "Students are graded based on exams, quizzes, assignments, and participation activities."
+  },
+  {
+    "rag": "The exam includes multiple choice questions, writing tasks, listening comprehension, and oral evaluation. It assesses all four skills: reading, writing, listening, and speaking.",
+    "expected": "Exams include multiple choice questions, writing tasks, listening comprehension, and oral evaluation."
+  },
+  {
+    "rag": "To get a certificate, you need to complete all courses and pass the final exam. You must achieve at least 70 percent on the final exam to pass.",
+    "expected": "Certificates are awarded after completing all courses and passing the final exam."
+  },
+  {
+    "rag": "Refunds are available within 14 days, provided that less than 20 percent of the course content has been accessed.",
+    "expected": "Refunds are available within 14 days if less than 20 percent of course content has been accessed."
+  },
+  {
+    "rag": "No, sharing your account or credentials is strictly prohibited. Each user is allowed only one account.",
+    "expected": "No, each user is allowed one account only and sharing accounts is strictly prohibited."
+  },
+  {
+    "rag": "Cheating in exams can lead to serious consequences, including failing the exam, suspension, or even expulsion from your educational institution. It can also damage your academic reputation and future opportunities.",
+    "expected": "Cheating during exams or quizzes will result in penalties or account suspension."
+  },
+  {
+    "rag": "The platform tracks student progress through various methods, including monitoring completed lessons, quiz scores, and exam results. Additionally, it utilizes learning analytics to track progress across all four language skills, which helps in providing personalized recommendations to students.",
+    "expected": "The platform tracks progress using completed lessons, quiz scores, and exam results."
+  },
+  {
+    "rag": "Each level includes four skills: reading, writing, listening, and speaking. Students must complete all courses related to these four skills before moving to the next level, and they are encouraged to balance their learning across all of them equally.",
+    "expected": "Each level includes Reading, Writing, Listening, and Speaking courses."
+  },
+  {
+    "rag": "Reading courses primarily focus on developing skills in comprehension, expanding vocabulary, making inferences, and understanding various written texts within different contexts.",
+    "expected": "Reading courses focus on comprehension, vocabulary expansion, and understanding written texts."
+  },
+  {
+    "rag": "Writing courses typically teach students various aspects of written communication, including grammar, syntax, style, rhetoric, and different forms of writing such as essays, reports, and creative pieces. They often focus on developing critical thinking, research skills, and the ability to organize and express ideas clearly and effectively.",
+    "expected": "Writing courses develop grammar, sentence structure, paragraph writing, and essay writing."
+  },
+  {
+    "rag": "Listening courses are designed to help learners understand spoken English in various contexts, such as everyday conversations, academic lectures, and real-life scenarios. The course content typically includes exercises based on these types of real-life conversations and academic lectures. Listening is also one of the four core skill courses, alongside Reading, Writing, and Speaking, available at each CEFR proficiency level (A1-C2).",
+    "expected": "Listening courses train learners to understand spoken conversations, lectures, and real-life speech."
+  },
+  {
+    "rag": "Speaking courses primarily focus on developing fluency, improving pronunciation, expanding vocabulary, and enhancing interactive communication skills. They often include practice through pronunciation exercises and conversation simulations.",
+    "expected": "Speaking courses focus on fluency, pronunciation, vocabulary, and communication skills."
+  },
+  {
+    "rag": "A1 level is considered a beginner level. At this stage, learners are able to understand and use basic everyday expressions and simple sentences.",
+    "expected": "A1 is beginner level where learners understand basic expressions and simple sentences."
+  },
+  {
+    "rag": "A2 level is considered an elementary level of proficiency. At this level, learners are able to communicate in simple tasks and handle routine information effectively.",
+    "expected": "A2 is elementary level where learners handle simple everyday communication."
+  },
+  {
+    "rag": "B1 level refers to an intermediate level, typically in language proficiency. At this level, learners are able to manage everyday situations and communicate their opinions on familiar subjects.",
+    "expected": "B1 is intermediate level where learners can handle everyday situations and express opinions."
+  },
+  {
+    "rag": "B2 level is an upper-intermediate level where individuals can interact fluently and produce detailed written and spoken content.",
+    "expected": "B2 is upper-intermediate level where learners can communicate fluently and in detail."
+  },
+  {
+    "rag": "C1 level is an advanced level where learners are capable of understanding complex texts and expressing their ideas fluently and precisely.",
+    "expected": "C1 is advanced level where learners understand complex texts and express ideas clearly."
+  },
+  {
+    "rag": "C2 level describes a proficiency level where individuals can understand virtually everything and express themselves naturally, much like a native speaker.",
+    "expected": "C2 is proficiency level where learners can understand and express like native speakers."
+  },
+  {
+    "rag": "Yes, you need to complete all four skill courses within a level before you can move on to the next level. These courses typically cover Reading, Writing, Listening, and Speaking for each CEFR level (A1-C2). A course is considered complete once all its lessons and assessments are finished.",
+    "expected": "Yes, students must complete all four skill courses before progressing."
+  },
+  {
+    "rag": "Learning Path Rules state that students must complete all four skill courses within a particular level before they can advance to the next level.",
+    "expected": "Students must complete all required courses in a level before moving to the next level."
+  },
+  {
+    "rag": "Community rules encompass guidelines for respectful interaction and conduct within a platform. These include general community guidelines that require respectful communication and prohibit harassment, spam, or offensive behavior, which can lead to account restrictions. Additionally, there are specific rules for instructors, mandating that all communication occur through official platform channels. Students also have guidelines to follow, such as completing lessons in order and respecting all platform rules.",
+    "expected": "Users must be respectful and avoid harassment, spam, or offensive behavior."
+  },
+  {
+    "rag": "Security guidelines require users to use strong passwords and refrain from sharing their login credentials. Please be aware that any suspicious activity on an account could result in a temporary suspension.",
+    "expected": "Users must use strong passwords and avoid sharing login credentials."
+  },
+  {
+    "rag": "Data is protected through several measures. User data is securely stored and encrypted, and personal information is never sold or shared with third parties unless legally required. Course materials are protected against redistribution. Additionally, users are advised to use strong passwords and avoid sharing login credentials, as suspicious activity could result in a temporary account suspension.",
+    "expected": "User data is encrypted and only shared when required by law."
+  },
+  {
+    "rag": "Yes, the platform is generally available 24/7, with the exception of scheduled maintenance periods.",
+    "expected": "Yes, the platform is available 24/7 except during maintenance."
+  },
+  {
+    "rag": "The platform supports mobile, tablet, and desktop devices.",
+    "expected": "The platform supports mobile, tablet, and desktop devices."
+  },
+  {
+    "rag": "Lesson format includes video content, quizzes, and practice exercises. Each lesson also contains interactive exercises designed to reinforce learning. Additionally, students are required to complete lessons in sequential order and adhere to the platform's rules.",
+    "expected": "Lessons include videos, quizzes, and practice exercises."
+  },
+  {
+    "rag": "Adaptive learning is an educational approach where a system adjusts the difficulty of content based on a student's performance. It often includes a recommendation engine that suggests lessons tailored to a student's weaknesses and progress, and uses learning analytics to track skill development, providing personalized recommendations.",
+    "expected": "Adaptive learning adjusts difficulty based on student performance."
+  },
+  {
+    "rag": "A recommendation system, such as a Recommendation Engine, works by analyzing specific data, like a student's weaknesses and progress. Based on this analysis, the system then suggests relevant items, for instance, recommending lessons to the student.",
+    "expected": "It recommends lessons based on student weaknesses and progress."
+  },
+  {
+    "rag": "A course is marked complete when all lessons and assessments are finished.",
+    "expected": "A course is completed when all lessons and assessments are finished."
+  },
+  {
+    "rag": "A vocabulary policy outlines how vocabulary is introduced and developed across different learning levels, ensuring a progressive learning curve for students.",
+    "expected": "Vocabulary is introduced progressively across all levels."
+  },
+  {
+    "rag": "The Grammar Learning Policy states that grammar is taught progressively, starting with simple structures at the A1 level and advancing to complex forms at the C2 level.",
+    "expected": "Grammar is taught from simple to advanced structures across levels."
+  },
+  {
+    "rag": "Speaking is practiced through a combination of methods including pronunciation exercises and conversation simulations. Speaking courses often focus on improving fluency, pronunciation, vocabulary usage, and overall interactive communication skills. Additionally, lessons typically include interactive exercises designed to reinforce learning.",
+    "expected": "Speaking practice includes pronunciation exercises and conversation simulations."
+  },
+  {
+    "rag": "Listening is practiced through various exercises such as engaging in real-life conversations and attending academic lectures. Listening courses are designed to train individuals to comprehend spoken English in different contexts, including everyday conversations, formal lectures, and other real-life scenarios.",
+    "expected": "Listening exercises include real-life conversations and academic lectures."
+  },
+  {
+    "rag": "Writing is practiced through tasks such as essays, summaries, and structured paragraphs. Writing courses also help in developing grammar accuracy, sentence structure, paragraph writing, essay writing, and formal communication skills.",
+    "expected": "Writing tasks include essays, summaries, and structured paragraphs."
+  },
+  {
+    "rag": "Reading is practiced through various exercises such as articles, stories, and comprehension tests. Reading courses also focus on improving comprehension, expanding vocabulary, developing inference skills, and understanding written texts in different contexts.",
+    "expected": "Reading exercises include articles, stories, and comprehension tests."
+  },
+  {
+    "rag": "The platform is an AI-powered English learning system that provides structured courses from A1 to C2 levels, following CEFR standards. It offers courses, exams, progress tracking, and support from instructors.",
+    "expected": "The platform is an AI-powered English learning system from A1 to C2."
+  },
+  {
+    "rag": "The course structure is organized by CEFR levels (A1-C2), with each level comprising four skill-based courses: Reading, Writing, Listening, and Speaking. To complete a course, all lessons and assessments must be finished. Each lesson typically consists of video content, quizzes, and practice exercises.",
+    "expected": "Each level contains four courses: Reading, Writing, Listening, Speaking."
+  },
+  {
+    "rag": "The exams include multiple-choice questions, writing tasks, listening comprehension, and oral evaluation. Each level features a final exam designed to evaluate all four key skills: reading, writing, listening, and speaking. To successfully pass a level exam, students are required to achieve a minimum score of 70 percent.",
+    "expected": "Exams include multiple choice, writing, listening, and speaking evaluation."
+  },
+  {
+    "rag": "To pass the level exam, students are required to achieve a minimum score of 70 percent.",
+    "expected": "Students must score at least 70% to pass."
+  }
+]

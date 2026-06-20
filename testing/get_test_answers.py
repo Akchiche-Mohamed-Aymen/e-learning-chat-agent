@@ -21,12 +21,13 @@ def get_documents_from_vector_db(query:str)->str:
 #=======================================================
 load_dotenv()
 key = os.environ.get("GOOGLE_API_KEY")
+embed_key = os.environ.get("EMBEDDING")
 embeddings = GoogleGenerativeAIEmbeddings(
     model="gemini-embedding-2-preview" , 
     output_dimensionality = 500 ,
     task_type = "RETRIEVAL_DOCUMENT" , 
-    api_key = key)
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash" , api_key = key , temperature=0.2 ,  max_retries=2)
+    api_key = embed_key)
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash" , api_key =key , temperature=0.2 ,  max_retries=2)
 system_prompt = """
  you are a hepful assistant that takes the docs found , and query of the user , summarize the docs
  and give answer for the query as human , answer should be meduim , understandable
@@ -117,17 +118,21 @@ questions = [
   { "question": "What is platform goal?", "expected_answer": "The platform aims to provide structured AI-powered English learning from A1 to C2." }
 ]
 answers = json.load(open("testing/answers.json",'r',encoding='utf-8'))
+start = json.load(open("testing/index.json",'r',encoding='utf-8'))['idx']
 n = len(questions)
-for i in range( n):
+for i in range( start , n):
     question = questions[i]
     try:
         answer = agent.invoke({"messages":[{'role' : "user" , 'content' : question['question']}]})['structured_response'].answer
         answers.append({
             "rag" : answer, "expected" : question['expected_answer']})
         print(f'SUCSESS {i+1} / {n}')
+        sleep(40)
+        print('passing rate limit')
     except Exception as e:
-        print(f'FAILED {i+1}')
         print(e)
+        with open("testing/index.json", "w") as f:
+            json.dump({'idx'  : i}, f, indent=2)
         break
 with open("testing/answers.json", "w") as f:
     json.dump(answers, f, indent=2)
