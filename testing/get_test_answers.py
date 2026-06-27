@@ -117,6 +117,7 @@ questions = [
 
   { "question": "What is platform goal?", "expected_answer": "The platform aims to provide structured AI-powered English learning from A1 to C2." }
 ]
+
 answers = json.load(open("testing/answers.json",'r',encoding='utf-8'))
 start = json.load(open("testing/index.json",'r',encoding='utf-8'))['idx']
 n = len(questions)

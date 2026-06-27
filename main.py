@@ -1,8 +1,7 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
-from tools import tools_list
 from langchain.agents import create_agent
 from pydantic import BaseModel
-
+from tools.rag import sumarize_retrieved_documents
 class Answer(BaseModel):
     answer: str
     tools_used: list[str]
@@ -18,7 +17,12 @@ When a user asks a question, you should determine which tool to use and provide 
 final answer should be as human format , not just the combination of outputs from used tools
 """
 try:
-    agent = create_agent(llm, tools = tools_list , system_prompt=system_prompt, response_format=Answer)
+    agent = create_agent(llm, tools = [] , system_prompt=system_prompt, response_format=Answer)
     
 except Exception as e:
     print(f"An error occurred: {e}")
+query = 'What score is needed to pass an exam?'
+try:
+    print(sumarize_retrieved_documents(query))
+except Exception as ex:
+    print(ex)
