@@ -2,6 +2,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import create_agent
 from pydantic import BaseModel
 from tools.rag import sumarize_retrieved_documents
+from tools.get_instructor_info import extract_instructor_info
 class Answer(BaseModel):
     answer: str
     tools_used: list[str]
@@ -21,8 +22,3 @@ try:
     
 except Exception as e:
     print(f"An error occurred: {e}")
-query = 'What score is needed to pass an exam?'
-try:
-    print(sumarize_retrieved_documents(query))
-except Exception as ex:
-    print(ex)
