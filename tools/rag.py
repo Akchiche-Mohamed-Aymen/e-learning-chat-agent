@@ -31,7 +31,7 @@ def get_documents_from_vector_db(query:str)->str:
     for doc in docs:
         retrieved+=doc.page_content
     return retrieved
-#@tool 
+@tool 
 def sumarize_retrieved_documents(query):
     """tool that retrieve answers from vetor db then summarize it """
     parser = JsonOutputParser(pydantic_object=Answer)
