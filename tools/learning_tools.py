@@ -1,5 +1,5 @@
 from langchain.tools import tool
-from repeated_code import get_courses_stats_by_level
+from repeated_code import get_courses_stats_by_level , learning_data , student_data
 @tool
 def get_courses_stats_by_level(level: str)->str:
     """
@@ -17,4 +17,15 @@ def get_courses_stats_by_level(level: str)->str:
     '''   
 @tool
 def get_exam_link():
-    return data['exam_level_link']
+    return learning_data['exam_level_link']
+@tool
+def num_of_enrolled_students(level: str):
+    """
+    Search the number of enrolled students in a specific English learning level (A1-C2).
+    Returns the number of enrolled students for the specified level.
+    """
+    num = 0
+    for student in student_data:
+        if student['level'] == level:
+            num += 1
+    return f"Number of enrolled students in level {level}: {num}"

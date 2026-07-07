@@ -2,7 +2,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import create_agent
 from pydantic import BaseModel
 from tools.rag import sumarize_retrieved_documents
-from tools.get_instructor_info import extract_instructor_info
+from tools.instructor_tools import extract_instructor_info
 class Answer(BaseModel):
     answer: str
     tools_used: list[str]
