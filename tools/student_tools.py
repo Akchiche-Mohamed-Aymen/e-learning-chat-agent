@@ -1,15 +1,5 @@
 from langchain.tools import tool
-from json import load
-data = load(open('./data/students.json'))
-def get_related_students(name: str):
-    '''This function is built to get student profile and progress'''
-    name = name.lower()
-    n = len(data)
-    result = []
-    for i in range(n):
-        if data[i]['name'] == name:
-            result.append(data[i])
-    return result
+from repeated_code import get_related_students , get_courses_stats_by_level
 @tool
 def get_student_profile(name: str):
     '''This tool is built to get full profile of the student'''
@@ -18,13 +8,19 @@ def get_student_profile(name: str):
         return "Student not found"
     return {k: v for k, v in students[0].items() if k != "watched"}     
 @tool
-def get_student_progress(name: str):
+def get_student_course_progress(name: str):
     '''This tool is built to get progress of the student'''
     students = get_related_students(name)
     if students == []:
         return "Student not found"
-    return students[0]['watched']           
-
+    watched = students[0]['watched']      
+    courses = get_courses_stats_by_level(students[0]['level'])
+    progress = {}
+    for key in courses.keys():
+        if key in watched:
+            progress[key] = f'{round((watched[key] / courses[key]) * 100, 2)} %' 
+    progress['completion_percentage'] = f'{round((sum(watched.values()) / sum(courses.values())) * 100, 2)} %'
+    return progress
 @tool
 def search_students(name: str):
     '''This tool is built to search students by name , and solve the confusion of multiple students with the same name'''
@@ -35,7 +31,7 @@ def search_students(name: str):
     return related_students
 @tool
 def get_student_summary(name):
-    '''This tool is built to get summary of the student'''
+    '''This tool is built to get stats about the student'''
     students = get_related_students(name)
     if students == []:
         return "Student not found"
@@ -45,3 +41,20 @@ def get_student_summary(name):
     summary += f"**Least Watched Video:** {min(student['watched'], key=student['watched'].get)}\n"
     summary += f"**Total Videos Watched:** {sum(student['watched'].values())}\n"
     return summary
+@tool
+def recommend_next_skill(name):
+    '''This tool is built to recommend the next skill for the student'''
+    students = get_related_students(name)
+    if students == []:
+        return "Student not found"
+    student = students[0]
+    courses = get_courses_stats_by_level(student['level'])
+    watched = student['watched']
+    for _ in range(4):
+        min_skill = min(watched ,  key=watched.get)
+        if watched[min_skill] < courses[min_skill]:
+            return f"Next skill to focus on : {min_skill}"
+        else:
+            watched  = watched.pop(min_skill)
+            if watched == {}:
+                return "All skills completed for this level , great job! You can move to the next level."

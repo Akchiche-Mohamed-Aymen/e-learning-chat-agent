@@ -1,6 +1,5 @@
-from json import load
 from langchain.tools import tool
-data = load(open('./data/learning.json'))
+from repeated_code import get_courses_stats_by_level
 @tool
 def get_courses_stats_by_level(level: str)->str:
     """
@@ -8,7 +7,7 @@ def get_courses_stats_by_level(level: str)->str:
     Returns the number of reading, writing, listening, and speaking lessons,
     levels are A1, A2, B1, B2, C1, C2.
     """
-    info = data['courses'][level]
+    info = get_courses_stats_by_level(level)
     return f'''
         Level {level} contains :
         - Reading: {info['reading']} lessons
