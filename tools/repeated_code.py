@@ -11,5 +11,5 @@ def get_related_students(name: str):
         if students_data[i]['name'] == name:
             result.append(students_data[i])
     return result
-def get_courses_stats_by_level(level: str)->str:
+def get_courses(level: str)->str:
     return learning_data['courses'][level]

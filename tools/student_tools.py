@@ -1,5 +1,5 @@
 from langchain.tools import tool
-from repeated_code import get_related_students , get_courses_stats_by_level
+from tools.repeated_code import get_related_students , get_courses
 @tool
 def get_student_profile(name: str):
     '''This tool is built to get full profile of the student'''
@@ -14,7 +14,7 @@ def get_student_course_progress(name: str):
     if students == []:
         return "Student not found"
     watched = students[0]['watched']      
-    courses = get_courses_stats_by_level(students[0]['level'])
+    courses = get_courses(students[0]['level'])
     progress = {}
     for key in courses.keys():
         if key in watched:
@@ -30,7 +30,7 @@ def search_students(name: str):
         return "No student found"
     return related_students
 @tool
-def get_student_summary(name):
+def get_student_summary(name : str):
     '''This tool is built to get stats about the student'''
     students = get_related_students(name)
     if students == []:
@@ -42,13 +42,13 @@ def get_student_summary(name):
     summary += f"**Total Videos Watched:** {sum(student['watched'].values())}\n"
     return summary
 @tool
-def recommend_next_skill(name):
+def recommend_next_skill(name : str):
     '''This tool is built to recommend the next skill for the student'''
     students = get_related_students(name)
     if students == []:
         return "Student not found"
     student = students[0]
-    courses = get_courses_stats_by_level(student['level'])
+    courses = get_courses(student['level'])
     watched = student['watched']
     for _ in range(4):
         min_skill = min(watched ,  key=watched.get)

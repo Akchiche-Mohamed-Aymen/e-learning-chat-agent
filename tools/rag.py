@@ -32,7 +32,7 @@ def get_documents_from_vector_db(query:str)->str:
         retrieved+=doc.page_content
     return retrieved
 @tool 
-def sumarize_retrieved_documents(query):
+def sumarize_retrieved_documents(query :str):
     """tool that retrieve answers from vetor db then summarize it """
     parser = JsonOutputParser(pydantic_object=Answer)
     prompt_template = PromptTemplate(
