@@ -58,3 +58,5 @@ def recommend_next_skill(name):
             watched  = watched.pop(min_skill)
             if watched == {}:
                 return "All skills completed for this level , great job! You can move to the next level."
+
+student_tools = [get_student_profile, get_student_course_progress, search_students, get_student_summary, recommend_next_skill]

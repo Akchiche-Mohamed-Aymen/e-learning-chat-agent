@@ -1,11 +1,11 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import create_agent
-from pydantic import BaseModel
+from utils import Answer
+from tools.student_tools import student_tools
+from tools.learning_tools import learning_tools
 from tools.rag import sumarize_retrieved_documents
 from tools.instructor_tools import extract_instructor_info
-class Answer(BaseModel):
-    answer: str
-    tools_used: list[str]
+tools = student_tools + learning_tools + [extract_instructor_info , sumarize_retrieved_documents]
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
     temperature=1.0, 
@@ -18,7 +18,7 @@ When a user asks a question, you should determine which tool to use and provide 
 final answer should be as human format , not just the combination of outputs from used tools
 """
 try:
-    agent = create_agent(llm, tools = [] , system_prompt=system_prompt, response_format=Answer)
+    agent = create_agent(llm, tools = tools , system_prompt=system_prompt, response_format=Answer)
     
 except Exception as e:
     print(f"An error occurred: {e}")

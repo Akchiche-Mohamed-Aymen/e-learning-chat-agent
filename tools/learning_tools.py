@@ -29,3 +29,4 @@ def num_of_enrolled_students(level: str):
         if student['level'] == level:
             num += 1
     return f"Number of enrolled students in level {level}: {num}"
+learning_tools = [get_courses_stats_by_level, get_exam_link, num_of_enrolled_students]
