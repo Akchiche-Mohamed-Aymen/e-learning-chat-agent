@@ -16,5 +16,6 @@ for i in range(3):
     })
     print(answer["structured_response"].answer)
     print("\n------------------------------------------------------------\n")
+    print(answer["structured_response"].tools_used)
 
 

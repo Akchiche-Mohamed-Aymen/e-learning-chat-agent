@@ -1,20 +1,20 @@
 from langchain.tools import tool
-from tools.repeated_code import get_related_students , get_courses
+from repeated_code import get_related_students , get_courses , get_student_by_name
 @tool
 def get_student_profile(name: str):
     '''This tool is built to get full profile of the student'''
-    students = get_related_students(name)
-    if students == []:
-        return "Student not found"
-    return {k: v for k, v in students[0].items() if k != "watched"}     
+    student = get_student_by_name(name)
+    if student is None:
+        return "No student matched the name provided"
+    return {k: v for k, v in student.items() if k != "watched"}     
 @tool
 def get_student_course_progress(name: str):
     '''This tool is built to get progress of the student'''
-    students = get_related_students(name)
-    if students == []:
-        return "Student not found"
-    watched = students[0]['watched']      
-    courses = get_courses(students[0]['level'])
+    student = get_student_by_name(name)
+    if student is None:
+        return "No student matched the name provided"
+    watched = student['watched']
+    courses = get_courses(student['level'])
     progress = {}
     for key in courses.keys():
         if key in watched:
@@ -32,10 +32,9 @@ def search_students(name: str):
 @tool
 def get_student_summary(name : str):
     '''This tool is built to get stats about the student'''
-    students = get_related_students(name)
-    if students == []:
-        return "Student not found"
-    student = students[0]
+    student = get_student_by_name(name)
+    if student is None:
+        return "No student matched the name provided"
     summary = f"**Level:** {student['level']}\n"
     summary += f"**Most Watched Video:** {max(student['watched'], key=student['watched'].get)}\n"
     summary += f"**Least Watched Video:** {min(student['watched'], key=student['watched'].get)}\n"
@@ -44,16 +43,15 @@ def get_student_summary(name : str):
 @tool
 def recommend_next_skill(name : str):
     '''This tool is built to recommend the next skill for the student'''
-    students = get_related_students(name)
-    if students == []:
-        return "Student not found"
-    student = students[0]
+    student = get_student_by_name(name)
+    if student is None:
+        return "No student matched the name provided"
     courses = get_courses(student['level'])
     watched = student['watched']
     for _ in range(4):
         min_skill = min(watched ,  key=watched.get)
         if watched[min_skill] < courses[min_skill]:
-            return f"Next skill to focus on : {min_skill}"
+            return min_skill
         else:
             watched  = watched.pop(min_skill)
             if watched == {}:
