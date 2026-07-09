@@ -1,5 +1,5 @@
 from langchain.tools import tool
-from repeated_code import get_related_students , get_courses , get_student_by_name
+from tools.repeated_code import get_related_students , get_courses , get_student_by_name
 @tool
 def get_student_profile(name: str):
     '''This tool is built to get full profile of the student'''
