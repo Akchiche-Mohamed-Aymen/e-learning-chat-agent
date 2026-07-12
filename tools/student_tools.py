@@ -1,18 +1,24 @@
 from langchain.tools import tool
-from tools.repeated_code import get_related_students , get_courses , get_student_by_name
+from tools.repeated_code import   get_courses , get_student_by_name
 @tool
 def get_student_profile(name: str):
     '''This tool is built to get full profile of the student'''
-    student = get_student_by_name(name)
-    if student is None:
+    students = get_student_by_name(name)
+    if not students :
         return "No student matched the name provided"
+    elif len(students) > 1:
+        return "Multiple students matched the name provided. Please provide a more specific name."
+    student = students[0]
     return {k: v for k, v in student.items() if k != "watched"}     
 @tool
 def get_student_course_progress(name: str):
     '''This tool is built to get progress of the student'''
-    student = get_student_by_name(name)
-    if student is None:
+    students = get_student_by_name(name)
+    if not students:
         return "No student matched the name provided"
+    elif len(students) > 1:
+        return "Multiple students matched the name provided. Please provide a more specific name."
+    student = students[0]
     watched = student['watched']
     courses = get_courses(student['level'])
     progress = {}
@@ -21,20 +27,16 @@ def get_student_course_progress(name: str):
             progress[key] = f'{round((watched[key] / courses[key]) * 100, 2)} %' 
     progress['completion_percentage'] = f'{round((sum(watched.values()) / sum(courses.values())) * 100, 2)} %'
     return progress
-@tool
-def search_students(name: str):
-    '''This tool is built to search students by name , and solve the confusion of multiple students with the same name'''
-    name = name.lower()
-    related_students = get_related_students(name)
-    if len(related_students) == 0:
-        return "No student found"
-    return related_students
+
 @tool
 def get_student_summary(name : str):
     '''This tool is built to get stats about the student'''
-    student = get_student_by_name(name)
-    if student is None:
+    students = get_student_by_name(name)
+    if not students:
         return "No student matched the name provided"
+    elif len(students) > 1:
+        return "Multiple students matched the name provided. Please provide a more specific name."
+    student = students[0]
     summary = f"**Level:** {student['level']}\n"
     summary += f"**Most Watched Video:** {max(student['watched'], key=student['watched'].get)}\n"
     summary += f"**Least Watched Video:** {min(student['watched'], key=student['watched'].get)}\n"
@@ -43,7 +45,12 @@ def get_student_summary(name : str):
 @tool
 def recommend_next_skill(name : str):
     '''This tool is built to recommend the next skill for the student'''
-    student = get_student_by_name(name)
+    students = get_student_by_name(name)
+    if not students:
+        return "No student matched the name provided"
+    elif len(students) > 1:
+        return "Multiple students matched the name provided. Please provide a more specific name."
+    student = students[0]
     if student is None:
         return "No student matched the name provided"
     courses = get_courses(student['level'])
@@ -57,4 +64,4 @@ def recommend_next_skill(name : str):
             if watched == {}:
                 return "All skills completed for this level , great job! You can move to the next level."
 
-student_tools = [get_student_profile, get_student_course_progress, search_students, get_student_summary, recommend_next_skill]
+student_tools = [get_student_profile, get_student_course_progress, get_student_summary, recommend_next_skill]

@@ -75,15 +75,6 @@ Use when the user asks:
 * Which skill needs improvement?
 * What should I focus on next?
 
-### search_students
-
-Use when:
-
-* a student name may contain spelling mistakes
-* multiple students have similar names
-* the requested student cannot be found exactly
-
-Always search for the closest matching student before reporting that the student does not exist.
 
 ---
 
