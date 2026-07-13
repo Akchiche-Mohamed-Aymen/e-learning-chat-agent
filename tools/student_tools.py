@@ -1,5 +1,11 @@
 from langchain.tools import tool
-from tools.repeated_code import  get_courses , get_student_by_name
+from auth.repeated_code import  get_student_by_name
+from json import load 
+
+
+def get_courses(level: str)->str:
+    learning_data = load(open('./data/learning.json'))
+    return learning_data['courses'][level]
 @tool
 def get_student_profile(name: str):
     '''This tool is built to get full profile of the student'''
