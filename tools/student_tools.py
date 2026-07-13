@@ -1,11 +1,11 @@
 from langchain.tools import tool
-from tools.repeated_code import   get_courses , get_student_by_name
+from tools.repeated_code import  get_courses , get_student_by_name
 @tool
 def get_student_profile(name: str):
     '''This tool is built to get full profile of the student'''
     students = get_student_by_name(name)
-    if not students :
-        return "No student matched the name provided"
+    if isinstance(students, dict):
+        return students['error']
     elif len(students) > 1:
         return "Multiple students matched the name provided. Please provide a more specific name."
     student = students[0]
@@ -14,8 +14,8 @@ def get_student_profile(name: str):
 def get_student_course_progress(name: str):
     '''This tool is built to get progress of the student'''
     students = get_student_by_name(name)
-    if not students:
-        return "No student matched the name provided"
+    if isinstance(students , dict):
+        return students['error']
     elif len(students) > 1:
         return "Multiple students matched the name provided. Please provide a more specific name."
     student = students[0]
@@ -32,8 +32,8 @@ def get_student_course_progress(name: str):
 def get_student_summary(name : str):
     '''This tool is built to get stats about the student'''
     students = get_student_by_name(name)
-    if not students:
-        return "No student matched the name provided"
+    if isinstance(students , dict):
+        return students['error']
     elif len(students) > 1:
         return "Multiple students matched the name provided. Please provide a more specific name."
     student = students[0]
@@ -46,8 +46,8 @@ def get_student_summary(name : str):
 def recommend_next_skill(name : str):
     '''This tool is built to recommend the next skill for the student'''
     students = get_student_by_name(name)
-    if not students:
-        return "No student matched the name provided"
+    if isinstance(students , dict):
+        return students['error']
     elif len(students) > 1:
         return "Multiple students matched the name provided. Please provide a more specific name."
     student = students[0]
