@@ -1,5 +1,5 @@
 from langchain.tools import tool
-from tools.repeated_code import get_courses , learning_data , students_data
+from auth.repeated_code import get_courses , learning_data , students_data
 @tool
 def get_courses_stats_by_level(level: str)->str:
     """
