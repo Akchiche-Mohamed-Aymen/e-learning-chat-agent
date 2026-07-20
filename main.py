@@ -5,11 +5,13 @@ from tools.student_tools import student_tools
 from tools.learning_tools import learning_tools
 from tools.rag import sumarize_retrieved_documents
 from tools.instructor_tools import extract_instructor_info
+from history_data.history import save_history , get_history
 tools = [*student_tools , *learning_tools ,extract_instructor_info , sumarize_retrieved_documents]
 system_prompt = open('system_prompt.txt' , 'r').read()
+user_id = load_id()
 config = {
     "configurable": {
-        "thread_id": load_id()
+        "thread_id": user_id
     }
 }
 memory = InMemorySaver()
@@ -19,5 +21,7 @@ for _ in range(5):
     answer =   agent.invoke({
             "messages": [{"role": "user", "content": user_input}]
         } , config=config)
-    print(answer["structured_response"].answer)
+    res = answer["structured_response"].answer
+    print(res)
+    save_history(user_id , user_input , res)
     
