@@ -1,5 +1,5 @@
 .env
 chroma_db/
-history.db/
+chroma_history/
 __pycache__/
 */__pycache__/
