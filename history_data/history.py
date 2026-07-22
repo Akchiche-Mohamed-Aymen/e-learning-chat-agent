@@ -60,6 +60,18 @@ def retrieve_history_db(user_id: str, query: str, k: int = 3):
     return '\n'.join(history) if history else ''
 @tool
 def get_summary_history(user_id):
+    """
+    Returns a concise summary of the user's past conversations.
+
+    Use this tool when:
+    - no relevant previous conversations can be retrieved,
+    - a high-level understanding of the user's previous interactions is sufficient.
+
+    Do NOT use this tool if relevant conversation history is available.
+    In that case, use retrieve_history_db instead.
+    The returned summary is intended to provide context for another AI assistant,
+    not to directly answer the user's question.
+    """
     history = get_history(user_id)
     if not history:
         return ''
@@ -67,5 +79,4 @@ def get_summary_history(user_id):
     n = len(history)
     for i in range(n):
         text +=f'Human : {history[i]['Human']} , AI : {history[i]['AI']}'
-    summary = ''
-    return summary
+    return text

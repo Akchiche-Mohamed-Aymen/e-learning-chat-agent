@@ -26,6 +26,7 @@ def load_id():
             return user_id
 class Answer(BaseModel):
     answer: str
+    add_to_db : bool
     tools_used: list[str]
 load_dotenv()
 key = os.environ.get("GOOGLE_API_KEY")
