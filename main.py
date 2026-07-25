@@ -22,10 +22,13 @@ agent = create_agent(llm, tools = tools , system_prompt=system_prompt, response_
 for _ in range(5):
     user_input = input("Enter your question : ")
     try:
-        #history_context = history_agent.invoke({ "messages": [{"role": "user","content": user_input}]})["messages"][-1].content
+        history_context = history_agent.invoke({ "messages": [{"role": "user","content": user_input}]})["messages"][-1].content
         answer =   agent.invoke({
                 "messages": [
-                    
+                    {
+                "role": "system",
+                "content": f"Relevant conversation context:\n{history_context}"
+            },
                 {
                     "role": "user",
                     "content": user_input
@@ -35,7 +38,7 @@ for _ in range(5):
         save = answer["structured_response"].add_to_db
         print(res)
         print(save)
-        save_history(user_id , user_input , res ,save)
+        save_history(user_input , res ,save)
     
     except Exception as ex:
         print(ex)

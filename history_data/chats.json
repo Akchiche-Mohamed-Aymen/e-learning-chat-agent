@@ -7,6 +7,14 @@
         {
             "Human": "her summary and what it must focus next",
             "AI": "Here is a summary for Barbara Smith:\nLevel: A1\nMost Watched Video: writing\nLeast Watched Video: reading\nTotal Videos Watched: 29\n\nBased on her activity, Barbara should focus on reading next."
+        },
+        {
+            "Human": "Compare her progress with the total lessons in her level",
+            "AI": "Barbara Smith has completed 38.16% of her A1 level. \n\nHere's a breakdown by skill:\n- **Reading:** She has completed 9.09% of 22 lessons, which is approximately 2 lessons.\n- **Writing:** She has completed 50.0% of 18 lessons, which is 9 lessons.\n- **Listening:** She has completed 45.0% of 20 lessons, which is 9 lessons.\n- **Speaking:** She has completed 56.25% of 16 lessons, which is 9 lessons."
+        },
+        {
+            "Human": "Does she seem ready for the next level?",
+            "AI": "Based on her progress, Barbara should focus on reading before moving to the next level."
         }
     ]
 }

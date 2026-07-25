@@ -1,8 +1,9 @@
 from json import load , dump
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
-from utils import embeddings
+from utils import embeddings , load_id
 from langchain.tools import tool
+user_id = load_id()
 try:
     chat_histories = load(open('./history_data/chats.json'))
 except:
@@ -13,19 +14,19 @@ history_db = Chroma(
     embedding_function=embeddings
 )
 
-def save_history_db(user_id: str, user_question: str, ai_answer: str):
+def save_history_db(user_question: str, ai_answer: str):
     doc = Document(
         page_content=f"User: {user_question}\nAssistant: {ai_answer}",
         metadata={"user_id": user_id},
         id=user_id
     )
     history_db.add_documents([doc])
-def get_history(user_id):
+def get_history():
     return chat_histories.get(user_id , [])
-def save_history(user_id , human , ai , save = False):
+def save_history(human , ai , save = False):
     if not save:
         return 
-    history = get_history(user_id)
+    history = get_history()
     history.append({
         'Human' : human,
         'AI' : ai
@@ -33,10 +34,10 @@ def save_history(user_id , human , ai , save = False):
     chat_histories[user_id] = history
     with open('./history_data/chats.json', "w", encoding="utf-8") as file:
         dump(chat_histories, file, indent=4, ensure_ascii=False)
-    save_history_db(user_id , human , ai)
+    save_history_db(human , ai)
 
 @tool
-def retrieve_history_db(user_id: str, query: str, k: int = 3):
+def retrieve_history_db(query: str, k: int = 3):
     """
     Retrieve relevant conversation history for a user.
     Use this tool when the query is somewhat clear
@@ -59,7 +60,7 @@ def retrieve_history_db(user_id: str, query: str, k: int = 3):
 
     return '\n'.join(history) if history else ''
 @tool
-def get_summary_history(user_id):
+def get_summary_history():
     """
     Returns a concise summary of the user's past conversations.
 
@@ -72,7 +73,7 @@ def get_summary_history(user_id):
     The returned summary is intended to provide context for another AI assistant,
     not to directly answer the user's question.
     """
-    history = get_history(user_id)
+    history = get_history()
     if not history:
         return ''
     text = ''
