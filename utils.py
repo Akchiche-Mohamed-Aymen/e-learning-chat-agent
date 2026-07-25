@@ -29,7 +29,7 @@ class Answer(BaseModel):
     add_to_db : bool
     tools_used: list[str]
 load_dotenv()
-key = os.environ.get("GOOGLE_API_KEY")
+key = os.environ.get("EMBEDDING")
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash" , api_key =key , temperature=0.2 ,  max_retries=2)
 
 

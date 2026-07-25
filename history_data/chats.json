@@ -15,6 +15,10 @@
         {
             "Human": "Does she seem ready for the next level?",
             "AI": "Based on her progress, Barbara should focus on reading before moving to the next level."
+        },
+        {
+            "Human": "show her profile againwith her name",
+            "AI": "Here is Barbara Smith's profile:\nName: Barbara Smith\nEmail: Barbara Smith@gmail.com\nPhone: +213543595178\nCurrent Level: A1"
         }
     ]
 }
