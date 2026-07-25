@@ -3,3 +3,4 @@ chroma_db/
 chroma_history/
 __pycache__/
 */__pycache__/
+papers.json

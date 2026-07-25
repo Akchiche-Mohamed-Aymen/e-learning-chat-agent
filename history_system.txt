@@ -24,4 +24,5 @@ Rules:
 - Preserve important entities, names, pronouns, and facts.
 - Do not add opinions or recommendations.
 - Write the output as context for another AI assistant, not for the end user.
-- Make add_to_db True just if the answer useful for the user , if he can't get response due to non availability or security make it False
+Set `add_to_db = True` only if the assistant successfully answered the user's request.
+

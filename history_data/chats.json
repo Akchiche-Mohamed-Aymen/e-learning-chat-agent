@@ -1,2 +1,12 @@
 {
+    "3891f1f8-de01-4322-a6a9-67f827a6852d": [
+        {
+            "Human": "give me full profile of Tara Smith",
+            "AI": "Here is the full profile for Barbara Smith:\nEmail: Barbara Smith@gmail.com\nLevel: A1\nPhone: +213543595178"
+        },
+        {
+            "Human": "her summary and what it must focus next",
+            "AI": "Here is a summary for Barbara Smith:\nLevel: A1\nMost Watched Video: writing\nLeast Watched Video: reading\nTotal Videos Watched: 29\n\nBased on her activity, Barbara should focus on reading next."
+        }
+    ]
 }
