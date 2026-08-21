@@ -36,10 +36,10 @@ for _ in range(5):
             } , config=config)
         res = answer["structured_response"].answer
         save = answer["structured_response"].add_to_db
-        print(res)
-        print(save)
+        print(f"\033[92m{res}\033[0m")
         save_history(user_input , res ,save)
+        print("\033[1;34m\n--------------------------------------------------------------------\n\033[0m")
     
-    except Exception as ex:
-        print(ex)
-        break
+    except:
+        print(print("\033[91mAn error occurred , try again later\033[0m"))
+        
