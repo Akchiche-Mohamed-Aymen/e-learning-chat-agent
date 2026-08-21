@@ -1,6 +1,6 @@
-# AI English Learning Assistant
+# AI English E-Learning Assistant
 
-An intelligent multi-agent English learning assistant built with **LangGraph**, **LangChain**, **Google Gemini**, and **ChromaDB**. The assistant combines tool calling, Retrieval-Augmented Generation (RAG), short-term and long-term memory, and role-based permissions to provide personalized educational support.
+An intelligent multi-agent e-learning assistant designed to support students, instructors, and administrators within an e-learning platform. Built with **LangGraph**, **LangChain**, **Google Gemini**, and **ChromaDB**, the assistant combines tool calling, **Retrieval-Augmented Generation (RAG)**, short-term and long-term memory, and role-based permissions to provide personalized learning support, progress tracking, course assistance, and educational management capabilities.
 
 ---
 
@@ -37,19 +37,30 @@ An intelligent multi-agent English learning assistant built with **LangGraph**, 
              Conversation Context
                       │
                       ▼
-                 Main Agent
-                      │
-        ┌─────────────┼─────────────┐
-        │             │             │
-        ▼             ▼             ▼
-  Student Tools  Learning Tools  Instructor Tool
-        │             │             │
-        └─────────────┼─────────────┘
-                      ▼
-                     RAG
-                      │
-                      ▼
-                Final Response
+                                          ┌─────────────────┐
+                         │   Main Agent    │
+                         └────────┬────────┘
+                                  │
+        ┌───────────────┬─────────┼──────────┬───────────────┐
+        │               │         │          │               │
+        ▼               ▼         ▼          ▼               │
+ ┌────────────┐ ┌────────────┐ ┌──────────┐ ┌────────────┐  │
+ │  Student   │ │  Learning  │ │Instructor│ │    RAG     │  │
+ │   Tools    │ │   Tools    │ │   Tool   │ │            │  │
+ └─────┬──────┘ └─────┬──────┘ └────┬─────┘ └─────┬──────┘  │
+       │              │             │             │         │
+       └──────────────┴─────────────┴─────────────┘         │
+                              │                              │
+                              ▼                              │
+                    ┌─────────────────┐                      │
+                    │ Response        │◄─────────────────────┘
+                    │ Synthesis       │
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │ Final Response  │
+                    └─────────────────┘
                       │
                       ▼
       Save useful conversations to Memory
@@ -403,3 +414,34 @@ Final Answer
  ▼
 Save conversation if useful
 ```
+# Run the project
+### 1. Download the repo
+```bash
+git clone https://github.com/Akchiche-Mohamed-Aymen/e-learning-chat-agent.git
+```
+### 2. Go to the folder
+```bash 
+cd e-learning-chat-agent 
+```
+### 3. Install libraries
+```bash 
+pip install -r requirements.txt
+```
+### 4. Create the vector database 
+```python
+py embed_knowledge.py
+```
+### 5. Start the agent
+```python
+py main.py
+```
+
+## 📬 Contact Me
+
+If you have any questions, suggestions, or would like to discuss this project, feel free to contact me.
+
+* **LinkedIn:** [akchiche_mohamed_aymen](https://www.linkedin.com/in/mohamed-aymen-akchiche-b9b0b7303/)
+* **Email:** [akchiche.mohamedaymen@gmail.com](mailto:akchiche.mohamedaymen@gmail.com)
+
+
+

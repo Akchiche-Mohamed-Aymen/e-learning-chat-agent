@@ -21,6 +21,7 @@
             "AI": "Here is Barbara Smith's profile:\nName: Barbara Smith\nEmail: Barbara Smith@gmail.com\nPhone: +213543595178\nCurrent Level: A1"
         },
         {
+<<<<<<< HEAD
             "Human": "How can i get the certificate",
             "AI": "To get a certificate, you need to complete all the courses and successfully pass the final exam."
         },
@@ -31,6 +32,22 @@
         {
             "Human": "what it is the next skill should i focus in",
             "AI": "You should focus on reading next."
+=======
+            "Human": "Can you give me some advice on how I can improve my performance in my current courses?",
+            "AI": "To improve your performance, I recommend focusing on your weakest skill first. Based on your progress, you might want to spend more time on Reading. Additionally, make sure to review past lessons, practice regularly, and utilize any additional resources provided within your courses."
+        },
+        {
+            "Human": "Can you give me some advice on how I can improve my performance in my current courses?",
+            "AI": "Based on your progress, I recommend focusing on improving your reading skills. To do this, try to read a variety of materials in English, such as articles, books, and news. Pay attention to vocabulary and comprehension. Additionally, regularly reviewing past lessons, practicing consistently, and utilizing all available course resources will help you improve your overall performance."
+        },
+        {
+            "Human": "Can you give me some advice on how I can improve my performance in my current courses?",
+            "AI": "To improve your performance in your current courses, I recommend the following:  1. **Consistent Practice:** Regularly engage with all four core skills: Reading, Writing, Listening, and Speaking. The more you practice, the more natural and proficient you'll become. 2. **Review and Reinforce:** Don't just move on after completing a lesson. Take time to review past material, especially areas you found challenging. This reinforces your learning and helps solidify concepts. 3. **Utilize Resources:** Make the most of all available course materials, including videos, interactive exercises, and any supplemental readings. These are designed to support your learning journey. 4. **Active Learning:** Instead of passively consuming content, try to actively engage with it. Take notes, summarize key points in your own words, and try to apply what you've learned in practical situations. 5. **Set Clear Goals:** Having specific, measurable goals can help you stay motivated and track your progress effectively. For example, aim to complete a certain number of exercises each week or spend a specific amount of time on a particular skill. 6. **Seek Clarification:** If you encounter something you don't understand, don't hesitate to seek clarification. You can refer back to course materials, look for additional resources, or ask for help. By consistently applying these strategies, you should see a significant improvement in your course performance."
+        },
+        {
+            "Human": "give me the profile of the instructor",
+            "AI": "Here is the profile for Dr. Sarah Johnson:\n\n**Biography:** Dr. Sarah Johnson is an English language instructor with over 12 years of teaching experience in both academic and professional environments. She holds a PhD in Applied Linguistics and has worked with learners from beginner (A1) to advanced (C2) levels. Her areas of specialization include English grammar, academic writing, IELTS and TOEFL preparation, pronunciation training, speaking fluency development, and curriculum design. She has designed numerous English courses focused on the four core language skills: Reading, Writing, Listening, and Speaking. Dr. Johnson is particularly interested in helping students improve their communication skills through practical, real-world learning activities and personalized feedback.\n\n**Contact Information:**\n* **Email:** sarah.johnson@englishacademy.com\n* **Phone:** +213555123456\n* **LinkedIn:** https://LinkedIn.com/drsarahjohnson\n* **X (formerly Twitter):** https://X.com/drsarahjohnson\n* **Facebook:** https://facebook.com/drsarahjohnson"
+>>>>>>> b2
         }
     ]
 }
