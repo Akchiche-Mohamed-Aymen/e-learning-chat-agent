@@ -1,0 +1,902 @@
+[
+  {
+    "question": "What is this platform?",
+    "docs": [
+      "Course Structure Overview: Each CEFR level (A1-C2) contains four skill courses: Reading, Writing, Listening, and Speaking.",
+      "Platform Overview: This platform is an AI-powered English learning system offering structured courses from A1 to C2 based on CEFR standards. It includes courses, exams, progress tracking, and instructor support.",
+      "Exam Overview: Each level includes a final exam evaluating all four skills: reading, writing, listening, and speaking."
+    ],
+    "expected_answer": "It is an AI-powered English learning system offering structured A1 to C2 courses based on CEFR standards, with courses, exams, progress tracking, and instructor support."
+  },
+  {
+    "question": "Which CEFR levels does the platform cover?",
+    "docs": [
+      "C2 Level Description: Proficiency level where learners can understand virtually everything and express themselves naturally like native speakers.",
+      "A1 Level Description: Beginner level where learners understand and use basic everyday expressions and simple sentences.",
+      "Platform Overview: This platform is an AI-powered English learning system offering structured courses from A1 to C2 based on CEFR standards. It includes courses, exams, progress tracking, and instructor support."
+    ],
+    "expected_answer": "The platform covers all CEFR levels from A1 to C2."
+  },
+  {
+    "question": "How many accounts is each user allowed to have?",
+    "docs": [
+      "Security Guidelines: Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension.",
+      "Privacy Policy: User data is stored securely and encrypted. Personal information is never sold or shared with third parties except when required by law.",
+      "User Account Policy: Users must register with a valid email address. Each user is allowed one account only. Sharing accounts or credentials is strictly prohibited."
+    ],
+    "expected_answer": "Each user is allowed one account only."
+  },
+  {
+    "question": "What do I need to register on the platform?",
+    "docs": [
+      "Technical Support Policy: Users can contact support for login issues, payment problems, or technical bugs.",
+      "Security Guidelines: Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension.",
+      "User Account Policy: Users must register with a valid email address. Each user is allowed one account only. Sharing accounts or credentials is strictly prohibited."
+    ],
+    "expected_answer": "You must register with a valid email address."
+  },
+  {
+    "question": "Can I share my account with a friend?",
+    "docs": [
+      "Security Guidelines: Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension.",
+      "User Account Policy: Users must register with a valid email address. Each user is allowed one account only. Sharing accounts or credentials is strictly prohibited.",
+      "Student Guidelines: Students must complete lessons in order and respect platform rules."
+    ],
+    "expected_answer": "No. Sharing accounts or credentials is strictly prohibited."
+  },
+  {
+    "question": "Does the platform sell my personal information?",
+    "docs": [
+      "Privacy Policy: User data is stored securely and encrypted. Personal information is never sold or shared with third parties except when required by law.",
+      "Content Protection Policy: All course materials are protected and cannot be redistributed.",
+      "User Account Policy: Users must register with a valid email address. Each user is allowed one account only. Sharing accounts or credentials is strictly prohibited."
+    ],
+    "expected_answer": "No. Personal information is never sold or shared with third parties except when required by law."
+  },
+  {
+    "question": "Is user data encrypted?",
+    "docs": [
+      "Security Guidelines: Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension.",
+      "Content Protection Policy: All course materials are protected and cannot be redistributed.",
+      "Privacy Policy: User data is stored securely and encrypted. Personal information is never sold or shared with third parties except when required by law."
+    ],
+    "expected_answer": "Yes. User data is stored securely and encrypted."
+  },
+  {
+    "question": "What happens if suspicious activity is detected on my account?",
+    "docs": [
+      "Anti-Cheating Policy: Cheating during exams or quizzes will result in penalties or account suspension.",
+      "User Account Policy: Users must register with a valid email address. Each user is allowed one account only. Sharing accounts or credentials is strictly prohibited.",
+      "Security Guidelines: Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension."
+    ],
+    "expected_answer": "Suspicious activity may lead to temporary account suspension."
+  },
+  {
+    "question": "What password practices does the platform recommend?",
+    "docs": [
+      "User Account Policy: Users must register with a valid email address. Each user is allowed one account only. Sharing accounts or credentials is strictly prohibited.",
+      "Privacy Policy: User data is stored securely and encrypted. Personal information is never sold or shared with third parties except when required by law.",
+      "Security Guidelines: Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension."
+    ],
+    "expected_answer": "Users should use strong passwords and avoid sharing login credentials."
+  },
+  {
+    "question": "What is the consequence of harassing other users?",
+    "docs": [
+      "Anti-Cheating Policy: Cheating during exams or quizzes will result in penalties or account suspension.",
+      "Community Guidelines: Respectful communication is required. Harassment, spam, or offensive behavior will result in account restrictions.",
+      "Security Guidelines: Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension."
+    ],
+    "expected_answer": "Harassment will result in account restrictions."
+  },
+  {
+    "question": "Is spam allowed in the community?",
+    "docs": [
+      "Community Guidelines: Respectful communication is required. Harassment, spam, or offensive behavior will result in account restrictions.",
+      "Security Guidelines: Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension.",
+      "Instructor Communication Rules: All communication must be done through official platform channels."
+    ],
+    "expected_answer": "No. Spam results in account restrictions."
+  },
+  {
+    "question": "How many skill courses does each CEFR level contain?",
+    "docs": [
+      "Exam Overview: Each level includes a final exam evaluating all four skills: reading, writing, listening, and speaking.",
+      "Learning Path Rules: Students must complete all four skill courses in a level before progressing to the next level.",
+      "Course Structure Overview: Each CEFR level (A1-C2) contains four skill courses: Reading, Writing, Listening, and Speaking."
+    ],
+    "expected_answer": "Each level contains four skill courses: Reading, Writing, Listening, and Speaking."
+  },
+  {
+    "question": "Which skills are taught in each level?",
+    "docs": [
+      "Course Structure Overview: Each CEFR level (A1-C2) contains four skill courses: Reading, Writing, Listening, and Speaking.",
+      "Skill Balance Policy: Students are encouraged to balance all four skills equally.",
+      "Learning Analytics: The platform tracks student progress across all four skills to provide personalized recommendations."
+    ],
+    "expected_answer": "Reading, Writing, Listening, and Speaking."
+  },
+  {
+    "question": "I finished only the Reading course in A2. Can I start B1?",
+    "docs": [
+      "Course Structure Overview: Each CEFR level (A1-C2) contains four skill courses: Reading, Writing, Listening, and Speaking.",
+      "Student Guidelines: Students must complete lessons in order and respect platform rules.",
+      "Learning Path Rules: Students must complete all four skill courses in a level before progressing to the next level."
+    ],
+    "expected_answer": "No. Students must complete all four skill courses in a level before progressing to the next level."
+  },
+  {
+    "question": "What must I do before moving to the next level?",
+    "docs": [
+      "Learning Path Rules: Students must complete all four skill courses in a level before progressing to the next level.",
+      "Course Completion Rules: A course is marked complete when all lessons and assessments are finished.",
+      "Exam Overview: Each level includes a final exam evaluating all four skills: reading, writing, listening, and speaking."
+    ],
+    "expected_answer": "Complete all four skill courses in the current level."
+  },
+  {
+    "question": "What do the Reading courses focus on?",
+    "docs": [
+      "Reading Course Description: Reading courses focus on comprehension, vocabulary expansion, inference, and understanding written texts in different contexts.",
+      "Speaking Course Description: Speaking courses focus on fluency, pronunciation, vocabulary usage, and interactive communication.",
+      "Reading Practice Policy: Reading exercises include articles, stories, and comprehension tests."
+    ],
+    "expected_answer": "Comprehension, vocabulary expansion, inference, and understanding written texts in different contexts."
+  },
+  {
+    "question": "What skills do Writing courses develop?",
+    "docs": [
+      "Writing Practice Policy: Writing tasks include essays, summaries, and structured paragraphs.",
+      "Grammar Learning Policy: Grammar is taught from simple structures in A1 to complex forms in C2.",
+      "Writing Course Description: Writing courses develop grammar accuracy, sentence structure, paragraph writing, essay writing, and formal communication skills."
+    ],
+    "expected_answer": "Grammar accuracy, sentence structure, paragraph writing, essay writing, and formal communication skills."
+  },
+  {
+    "question": "What do Listening courses train learners to do?",
+    "docs": [
+      "Reading Course Description: Reading courses focus on comprehension, vocabulary expansion, inference, and understanding written texts in different contexts.",
+      "Listening Course Description: Listening courses train learners to understand spoken English in conversations, lectures, and real-life situations.",
+      "Listening Practice Policy: Listening exercises include real-life conversations and academic lectures."
+    ],
+    "expected_answer": "They train learners to understand spoken English in conversations, lectures, and real-life situations."
+  },
+  {
+    "question": "What is the focus of the Speaking courses?",
+    "docs": [
+      "Writing Course Description: Writing courses develop grammar accuracy, sentence structure, paragraph writing, essay writing, and formal communication skills.",
+      "Speaking Practice Policy: Speaking practice includes pronunciation exercises and conversation simulations.",
+      "Speaking Course Description: Speaking courses focus on fluency, pronunciation, vocabulary usage, and interactive communication."
+    ],
+    "expected_answer": "Fluency, pronunciation, vocabulary usage, and interactive communication."
+  },
+  {
+    "question": "What is the A1 level?",
+    "docs": [
+      "Grammar Learning Policy: Grammar is taught from simple structures in A1 to complex forms in C2.",
+      "A2 Level Description: Elementary level where learners can communicate simple tasks and routine information.",
+      "A1 Level Description: Beginner level where learners understand and use basic everyday expressions and simple sentences."
+    ],
+    "expected_answer": "A beginner level where learners understand and use basic everyday expressions and simple sentences."
+  },
+  {
+    "question": "What can learners do at the A2 level?",
+    "docs": [
+      "A2 Level Description: Elementary level where learners can communicate simple tasks and routine information.",
+      "B1 Level Description: Intermediate level where learners can handle everyday situations and express opinions on familiar topics.",
+      "A1 Level Description: Beginner level where learners understand and use basic everyday expressions and simple sentences."
+    ],
+    "expected_answer": "They can communicate simple tasks and routine information."
+  },
+  {
+    "question": "Describe the B1 level.",
+    "docs": [
+      "B2 Level Description: Upper-intermediate level where learners can interact fluently and produce detailed written and spoken content.",
+      "A2 Level Description: Elementary level where learners can communicate simple tasks and routine information.",
+      "B1 Level Description: Intermediate level where learners can handle everyday situations and express opinions on familiar topics."
+    ],
+    "expected_answer": "An intermediate level where learners can handle everyday situations and express opinions on familiar topics."
+  },
+  {
+    "question": "Describe the B2 level.",
+    "docs": [
+      "B1 Level Description: Intermediate level where learners can handle everyday situations and express opinions on familiar topics.",
+      "B2 Level Description: Upper-intermediate level where learners can interact fluently and produce detailed written and spoken content.",
+      "C1 Level Description: Advanced level where learners can understand complex texts and express ideas fluently and precisely."
+    ],
+    "expected_answer": "An upper-intermediate level where learners can interact fluently and produce detailed written and spoken content."
+  },
+  {
+    "question": "What is expected of learners at C1?",
+    "docs": [
+      "C2 Level Description: Proficiency level where learners can understand virtually everything and express themselves naturally like native speakers.",
+      "C1 Level Description: Advanced level where learners can understand complex texts and express ideas fluently and precisely.",
+      "B2 Level Description: Upper-intermediate level where learners can interact fluently and produce detailed written and spoken content."
+    ],
+    "expected_answer": "They can understand complex texts and express ideas fluently and precisely."
+  },
+  {
+    "question": "What is the C2 level?",
+    "docs": [
+      "C2 Level Description: Proficiency level where learners can understand virtually everything and express themselves naturally like native speakers.",
+      "C1 Level Description: Advanced level where learners can understand complex texts and express ideas fluently and precisely.",
+      "B2 Level Description: Upper-intermediate level where learners can interact fluently and produce detailed written and spoken content."
+    ],
+    "expected_answer": "The proficiency level where learners can understand virtually everything and express themselves naturally like native speakers."
+  },
+  {
+    "question": "Which level is described as upper-intermediate?",
+    "docs": [
+      "B2 Level Description: Upper-intermediate level where learners can interact fluently and produce detailed written and spoken content.",
+      "B1 Level Description: Intermediate level where learners can handle everyday situations and express opinions on familiar topics.",
+      "C1 Level Description: Advanced level where learners can understand complex texts and express ideas fluently and precisely."
+    ],
+    "expected_answer": "B2."
+  },
+  {
+    "question": "Which level is called elementary?",
+    "docs": [
+      "A1 Level Description: Beginner level where learners understand and use basic everyday expressions and simple sentences.",
+      "A2 Level Description: Elementary level where learners can communicate simple tasks and routine information.",
+      "B1 Level Description: Intermediate level where learners can handle everyday situations and express opinions on familiar topics."
+    ],
+    "expected_answer": "A2."
+  },
+  {
+    "question": "What does the final exam of each level evaluate?",
+    "docs": [
+      "Exam Structure Details: Exams include multiple choice questions, writing tasks, listening comprehension, and oral evaluation.",
+      "Exam Overview: Each level includes a final exam evaluating all four skills: reading, writing, listening, and speaking.",
+      "Exam Passing Criteria: Students must achieve at least 70 percent to pass the level exam."
+    ],
+    "expected_answer": "All four skills: reading, writing, listening, and speaking."
+  },
+  {
+    "question": "What score do I need to pass a level exam?",
+    "docs": [
+      "Exam Overview: Each level includes a final exam evaluating all four skills: reading, writing, listening, and speaking.",
+      "Exam Retake Policy: Students may retake a failed exam after a waiting period of 14 days.",
+      "Exam Passing Criteria: Students must achieve at least 70 percent to pass the level exam."
+    ],
+    "expected_answer": "At least 70 percent."
+  },
+  {
+    "question": "I failed my B1 exam yesterday. When can I retake it?",
+    "docs": [
+      "Exam Overview: Each level includes a final exam evaluating all four skills: reading, writing, listening, and speaking.",
+      "Exam Retake Policy: Students may retake a failed exam after a waiting period of 14 days.",
+      "Exam Passing Criteria: Students must achieve at least 70 percent to pass the level exam."
+    ],
+    "expected_answer": "After a waiting period of 14 days."
+  },
+  {
+    "question": "What types of questions appear in the exams?",
+    "docs": [
+      "Exam Overview: Each level includes a final exam evaluating all four skills: reading, writing, listening, and speaking.",
+      "Writing Practice Policy: Writing tasks include essays, summaries, and structured paragraphs.",
+      "Exam Structure Details: Exams include multiple choice questions, writing tasks, listening comprehension, and oral evaluation."
+    ],
+    "expected_answer": "Multiple choice questions, writing tasks, listening comprehension, and oral evaluation."
+  },
+  {
+    "question": "Does the exam include a speaking part?",
+    "docs": [
+      "Exam Overview: Each level includes a final exam evaluating all four skills: reading, writing, listening, and speaking.",
+      "Speaking Practice Policy: Speaking practice includes pronunciation exercises and conversation simulations.",
+      "Exam Structure Details: Exams include multiple choice questions, writing tasks, listening comprehension, and oral evaluation."
+    ],
+    "expected_answer": "Yes. The exam evaluates speaking through an oral evaluation."
+  },
+  {
+    "question": "How are grades calculated?",
+    "docs": [
+      "Grading System: Grades are calculated from exams, quizzes, assignments, and participation activities.",
+      "Exam Passing Criteria: Students must achieve at least 70 percent to pass the level exam.",
+      "Progress Tracking System: Student progress is measured by completed lessons, quiz scores, and exam results."
+    ],
+    "expected_answer": "Grades are calculated from exams, quizzes, assignments, and participation activities."
+  },
+  {
+    "question": "When is a certificate awarded?",
+    "docs": [
+      "Course Completion Rules: A course is marked complete when all lessons and assessments are finished.",
+      "Exam Overview: Each level includes a final exam evaluating all four skills: reading, writing, listening, and speaking.",
+      "Certification Policy: Certificates are awarded after completing all courses and passing the final exam."
+    ],
+    "expected_answer": "After completing all courses and passing the final exam."
+  },
+  {
+    "question": "Can I get a certificate if I finish all courses but fail the final exam?",
+    "docs": [
+      "Exam Retake Policy: Students may retake a failed exam after a waiting period of 14 days.",
+      "Certification Policy: Certificates are awarded after completing all courses and passing the final exam.",
+      "Exam Passing Criteria: Students must achieve at least 70 percent to pass the level exam."
+    ],
+    "expected_answer": "No. Certificates require completing all courses and passing the final exam (at least 70 percent)."
+  },
+  {
+    "question": "What is the refund policy?",
+    "docs": [
+      "Refund Policy: Refunds are available within 14 days if less than 20 percent of course content has been accessed.",
+      "Payment Policy: All courses must be paid before full access is granted.",
+      "Subscription Model: Users can subscribe monthly or annually to access platform content."
+    ],
+    "expected_answer": "Refunds are available within 14 days if less than 20 percent of the course content has been accessed."
+  },
+  {
+    "question": "Can I get a refund 3 weeks after purchase?",
+    "docs": [
+      "Payment Policy: All courses must be paid before full access is granted.",
+      "Refund Policy: Refunds are available within 14 days if less than 20 percent of course content has been accessed.",
+      "Subscription Model: Users can subscribe monthly or annually to access platform content."
+    ],
+    "expected_answer": "No. Refunds are only available within 14 days of purchase."
+  },
+  {
+    "question": "I bought a course 10 days ago and accessed 15 percent of it. Can I get a refund?",
+    "docs": [
+      "Payment Policy: All courses must be paid before full access is granted.",
+      "Refund Policy: Refunds are available within 14 days if less than 20 percent of course content has been accessed.",
+      "Subscription Model: Users can subscribe monthly or annually to access platform content."
+    ],
+    "expected_answer": "Yes. It is within 14 days and less than 20 percent of the content was accessed."
+  },
+  {
+    "question": "I bought a course 10 days ago and accessed 30 percent of it. Can I get a refund?",
+    "docs": [
+      "Payment Policy: All courses must be paid before full access is granted.",
+      "Refund Policy: Refunds are available within 14 days if less than 20 percent of course content has been accessed.",
+      "Subscription Model: Users can subscribe monthly or annually to access platform content."
+    ],
+    "expected_answer": "No. Although within 14 days, more than 20 percent of the content was accessed."
+  },
+  {
+    "question": "Do I have to pay before accessing courses?",
+    "docs": [
+      "Refund Policy: Refunds are available within 14 days if less than 20 percent of course content has been accessed.",
+      "Subscription Model: Users can subscribe monthly or annually to access platform content.",
+      "Payment Policy: All courses must be paid before full access is granted."
+    ],
+    "expected_answer": "Yes. All courses must be paid before full access is granted."
+  },
+  {
+    "question": "What subscription options are available?",
+    "docs": [
+      "Subscription Model: Users can subscribe monthly or annually to access platform content.",
+      "Refund Policy: Refunds are available within 14 days if less than 20 percent of course content has been accessed.",
+      "Payment Policy: All courses must be paid before full access is granted."
+    ],
+    "expected_answer": "Users can subscribe monthly or annually."
+  },
+  {
+    "question": "What are the responsibilities of instructors?",
+    "docs": [
+      "Instructor Communication Rules: All communication must be done through official platform channels.",
+      "Instructor Responsibilities: Instructors must provide accurate educational content and respond to student questions professionally.",
+      "Instructor Content Guidelines: Instructors must ensure content aligns with CEFR standards and platform curriculum."
+    ],
+    "expected_answer": "Instructors must provide accurate educational content and respond to student questions professionally."
+  },
+  {
+    "question": "Through which channels must instructors communicate with students?",
+    "docs": [
+      "Instructor Communication Rules: All communication must be done through official platform channels.",
+      "Instructor Responsibilities: Instructors must provide accurate educational content and respond to student questions professionally.",
+      "Community Guidelines: Respectful communication is required. Harassment, spam, or offensive behavior will result in account restrictions."
+    ],
+    "expected_answer": "All communication must be done through official platform channels."
+  },
+  {
+    "question": "How is instructor performance evaluated?",
+    "docs": [
+      "Instructor Responsibilities: Instructors must provide accurate educational content and respond to student questions professionally.",
+      "Instructor Content Guidelines: Instructors must ensure content aligns with CEFR standards and platform curriculum.",
+      "Instructor Evaluation Policy: Instructor performance is evaluated based on student feedback and engagement metrics."
+    ],
+    "expected_answer": "Based on student feedback and engagement metrics."
+  },
+  {
+    "question": "What must instructor content align with?",
+    "docs": [
+      "Instructor Responsibilities: Instructors must provide accurate educational content and respond to student questions professionally.",
+      "Course Structure Overview: Each CEFR level (A1-C2) contains four skill courses: Reading, Writing, Listening, and Speaking.",
+      "Instructor Content Guidelines: Instructors must ensure content aligns with CEFR standards and platform curriculum."
+    ],
+    "expected_answer": "CEFR standards and the platform curriculum."
+  },
+  {
+    "question": "What are the main guidelines for students?",
+    "docs": [
+      "Student Guidelines: Students must complete lessons in order and respect platform rules.",
+      "Student Study Recommendations: Students are encouraged to study daily and revise previous lessons regularly.",
+      "Learning Path Rules: Students must complete all four skill courses in a level before progressing to the next level."
+    ],
+    "expected_answer": "Students must complete lessons in order and respect platform rules."
+  },
+  {
+    "question": "What study habits does the platform recommend?",
+    "docs": [
+      "Attendance Policy: Consistent participation improves learning outcomes and retention.",
+      "Student Guidelines: Students must complete lessons in order and respect platform rules.",
+      "Student Study Recommendations: Students are encouraged to study daily and revise previous lessons regularly."
+    ],
+    "expected_answer": "Studying daily and revising previous lessons regularly."
+  },
+  {
+    "question": "Why is consistent participation important?",
+    "docs": [
+      "Attendance Policy: Consistent participation improves learning outcomes and retention.",
+      "Student Study Recommendations: Students are encouraged to study daily and revise previous lessons regularly.",
+      "Learning Analytics: The platform tracks student progress across all four skills to provide personalized recommendations."
+    ],
+    "expected_answer": "Consistent participation improves learning outcomes and retention."
+  },
+  {
+    "question": "What does the learning analytics feature do?",
+    "docs": [
+      "Recommendation Engine: The system recommends lessons based on student weaknesses and progress.",
+      "Progress Tracking System: Student progress is measured by completed lessons, quiz scores, and exam results.",
+      "Learning Analytics: The platform tracks student progress across all four skills to provide personalized recommendations."
+    ],
+    "expected_answer": "It tracks student progress across all four skills to provide personalized recommendations."
+  },
+  {
+    "question": "How is student progress measured?",
+    "docs": [
+      "Progress Tracking System: Student progress is measured by completed lessons, quiz scores, and exam results.",
+      "Grading System: Grades are calculated from exams, quizzes, assignments, and participation activities.",
+      "Learning Analytics: The platform tracks student progress across all four skills to provide personalized recommendations."
+    ],
+    "expected_answer": "By completed lessons, quiz scores, and exam results."
+  },
+  {
+    "question": "Who can I contact for login issues?",
+    "docs": [
+      "Security Guidelines: Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension.",
+      "Platform Availability: The platform is available 24/7 except during maintenance periods.",
+      "Technical Support Policy: Users can contact support for login issues, payment problems, or technical bugs."
+    ],
+    "expected_answer": "You can contact technical support."
+  },
+  {
+    "question": "Where do I get help with payment problems?",
+    "docs": [
+      "Payment Policy: All courses must be paid before full access is granted.",
+      "Refund Policy: Refunds are available within 14 days if less than 20 percent of course content has been accessed.",
+      "Technical Support Policy: Users can contact support for login issues, payment problems, or technical bugs."
+    ],
+    "expected_answer": "Contact support, which handles login issues, payment problems, and technical bugs."
+  },
+  {
+    "question": "Is the platform available 24/7?",
+    "docs": [
+      "Platform Availability: The platform is available 24/7 except during maintenance periods.",
+      "Technical Support Policy: Users can contact support for login issues, payment problems, or technical bugs.",
+      "Mobile Access Policy: The platform supports mobile, tablet, and desktop devices."
+    ],
+    "expected_answer": "Yes, except during maintenance periods."
+  },
+  {
+    "question": "Which devices does the platform support?",
+    "docs": [
+      "Mobile Access Policy: The platform supports mobile, tablet, and desktop devices.",
+      "Platform Availability: The platform is available 24/7 except during maintenance periods.",
+      "Technical Support Policy: Users can contact support for login issues, payment problems, or technical bugs."
+    ],
+    "expected_answer": "Mobile, tablet, and desktop devices."
+  },
+  {
+    "question": "Can I redistribute course materials?",
+    "docs": [
+      "Content Protection Policy: All course materials are protected and cannot be redistributed.",
+      "Anti-Cheating Policy: Cheating during exams or quizzes will result in penalties or account suspension.",
+      "Privacy Policy: User data is stored securely and encrypted. Personal information is never sold or shared with third parties except when required by law."
+    ],
+    "expected_answer": "No. All course materials are protected and cannot be redistributed."
+  },
+  {
+    "question": "What happens if I cheat during an exam?",
+    "docs": [
+      "Community Guidelines: Respectful communication is required. Harassment, spam, or offensive behavior will result in account restrictions.",
+      "Anti-Cheating Policy: Cheating during exams or quizzes will result in penalties or account suspension.",
+      "Exam Passing Criteria: Students must achieve at least 70 percent to pass the level exam."
+    ],
+    "expected_answer": "Cheating results in penalties or account suspension."
+  },
+  {
+    "question": "What does a lesson include?",
+    "docs": [
+      "Reading Practice Policy: Reading exercises include articles, stories, and comprehension tests.",
+      "Exercise System: Each lesson includes interactive exercises to reinforce learning.",
+      "Lesson Format: Lessons include video content, quizzes, and practice exercises."
+    ],
+    "expected_answer": "Video content, quizzes, and practice exercises."
+  },
+  {
+    "question": "How does the exercise system work?",
+    "docs": [
+      "Lesson Format: Lessons include video content, quizzes, and practice exercises.",
+      "Adaptive Learning System: The platform adapts content difficulty based on student performance.",
+      "Exercise System: Each lesson includes interactive exercises to reinforce learning."
+    ],
+    "expected_answer": "Each lesson includes interactive exercises to reinforce learning."
+  },
+  {
+    "question": "What is the adaptive learning system?",
+    "docs": [
+      "Recommendation Engine: The system recommends lessons based on student weaknesses and progress.",
+      "Learning Analytics: The platform tracks student progress across all four skills to provide personalized recommendations.",
+      "Adaptive Learning System: The platform adapts content difficulty based on student performance."
+    ],
+    "expected_answer": "It adapts content difficulty based on student performance."
+  },
+  {
+    "question": "How does the recommendation engine choose lessons?",
+    "docs": [
+      "Adaptive Learning System: The platform adapts content difficulty based on student performance.",
+      "Recommendation Engine: The system recommends lessons based on student weaknesses and progress.",
+      "Learning Analytics: The platform tracks student progress across all four skills to provide personalized recommendations."
+    ],
+    "expected_answer": "It recommends lessons based on student weaknesses and progress."
+  },
+  {
+    "question": "When is a course marked as complete?",
+    "docs": [
+      "Course Completion Rules: A course is marked complete when all lessons and assessments are finished.",
+      "Lesson Format: Lessons include video content, quizzes, and practice exercises.",
+      "Learning Path Rules: Students must complete all four skill courses in a level before progressing to the next level."
+    ],
+    "expected_answer": "When all lessons and assessments are finished."
+  },
+  {
+    "question": "Does the platform encourage balancing the four skills?",
+    "docs": [
+      "Course Structure Overview: Each CEFR level (A1-C2) contains four skill courses: Reading, Writing, Listening, and Speaking.",
+      "Skill Balance Policy: Students are encouraged to balance all four skills equally.",
+      "Learning Analytics: The platform tracks student progress across all four skills to provide personalized recommendations."
+    ],
+    "expected_answer": "Yes. Students are encouraged to balance all four skills equally."
+  },
+  {
+    "question": "How is vocabulary introduced?",
+    "docs": [
+      "Vocabulary Development Policy: Vocabulary is introduced progressively across all levels.",
+      "Reading Course Description: Reading courses focus on comprehension, vocabulary expansion, inference, and understanding written texts in different contexts.",
+      "Grammar Learning Policy: Grammar is taught from simple structures in A1 to complex forms in C2."
+    ],
+    "expected_answer": "Progressively across all levels."
+  },
+  {
+    "question": "How does grammar teaching progress?",
+    "docs": [
+      "Grammar Learning Policy: Grammar is taught from simple structures in A1 to complex forms in C2.",
+      "Writing Course Description: Writing courses develop grammar accuracy, sentence structure, paragraph writing, essay writing, and formal communication skills.",
+      "Vocabulary Development Policy: Vocabulary is introduced progressively across all levels."
+    ],
+    "expected_answer": "From simple structures in A1 to complex forms in C2."
+  },
+  {
+    "question": "What does speaking practice include?",
+    "docs": [
+      "Speaking Practice Policy: Speaking practice includes pronunciation exercises and conversation simulations.",
+      "Speaking Course Description: Speaking courses focus on fluency, pronunciation, vocabulary usage, and interactive communication.",
+      "Listening Practice Policy: Listening exercises include real-life conversations and academic lectures."
+    ],
+    "expected_answer": "Pronunciation exercises and conversation simulations."
+  },
+  {
+    "question": "What do listening exercises include?",
+    "docs": [
+      "Listening Course Description: Listening courses train learners to understand spoken English in conversations, lectures, and real-life situations.",
+      "Listening Practice Policy: Listening exercises include real-life conversations and academic lectures.",
+      "Speaking Practice Policy: Speaking practice includes pronunciation exercises and conversation simulations."
+    ],
+    "expected_answer": "Real-life conversations and academic lectures."
+  },
+  {
+    "question": "What kinds of writing tasks are included?",
+    "docs": [
+      "Writing Course Description: Writing courses develop grammar accuracy, sentence structure, paragraph writing, essay writing, and formal communication skills.",
+      "Writing Practice Policy: Writing tasks include essays, summaries, and structured paragraphs.",
+      "Reading Practice Policy: Reading exercises include articles, stories, and comprehension tests."
+    ],
+    "expected_answer": "Essays, summaries, and structured paragraphs."
+  },
+  {
+    "question": "What do reading exercises include?",
+    "docs": [
+      "Reading Practice Policy: Reading exercises include articles, stories, and comprehension tests.",
+      "Reading Course Description: Reading courses focus on comprehension, vocabulary expansion, inference, and understanding written texts in different contexts.",
+      "Writing Practice Policy: Writing tasks include essays, summaries, and structured paragraphs."
+    ],
+    "expected_answer": "Articles, stories, and comprehension tests."
+  },
+  {
+    "question": "What is required to get a certificate at level C1?",
+    "docs": [
+      "Certification Policy: Certificates are awarded after completing all courses and passing the final exam.",
+      "Learning Path Rules: Students must complete all four skill courses in a level before progressing to the next level.",
+      "Exam Passing Criteria: Students must achieve at least 70 percent to pass the level exam."
+    ],
+    "expected_answer": "Complete all courses (all four skill courses) and pass the final exam with at least 70 percent."
+  },
+  {
+    "question": "Does the platform personalize recommendations for each student?",
+    "docs": [
+      "Adaptive Learning System: The platform adapts content difficulty based on student performance.",
+      "Recommendation Engine: The system recommends lessons based on student weaknesses and progress.",
+      "Learning Analytics: The platform tracks student progress across all four skills to provide personalized recommendations."
+    ],
+    "expected_answer": "Yes. It tracks progress across all four skills and recommends lessons based on weaknesses and progress."
+  },
+  {
+    "question": "I am weak in listening. How will the platform help me?",
+    "docs": [
+      "Learning Analytics: The platform tracks student progress across all four skills to provide personalized recommendations.",
+      "Recommendation Engine: The system recommends lessons based on student weaknesses and progress.",
+      "Adaptive Learning System: The platform adapts content difficulty based on student performance."
+    ],
+    "expected_answer": "It recommends lessons based on your weaknesses and adapts content difficulty to your performance."
+  },
+  {
+    "question": "Can I skip lessons and go directly to later ones?",
+    "docs": [
+      "Course Completion Rules: A course is marked complete when all lessons and assessments are finished.",
+      "Student Guidelines: Students must complete lessons in order and respect platform rules.",
+      "Learning Path Rules: Students must complete all four skill courses in a level before progressing to the next level."
+    ],
+    "expected_answer": "No. Students must complete lessons in order."
+  },
+  {
+    "question": "What happens if I cheat on a quiz?",
+    "docs": [
+      "Anti-Cheating Policy: Cheating during exams or quizzes will result in penalties or account suspension.",
+      "Community Guidelines: Respectful communication is required. Harassment, spam, or offensive behavior will result in account restrictions.",
+      "Security Guidelines: Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension."
+    ],
+    "expected_answer": "Cheating on quizzes results in penalties or account suspension."
+  },
+  {
+    "question": "Can an instructor contact me through a private messaging app?",
+    "docs": [
+      "Instructor Responsibilities: Instructors must provide accurate educational content and respond to student questions professionally.",
+      "Instructor Communication Rules: All communication must be done through official platform channels.",
+      "Community Guidelines: Respectful communication is required. Harassment, spam, or offensive behavior will result in account restrictions."
+    ],
+    "expected_answer": "No. All communication must be done through official platform channels."
+  },
+  {
+    "question": "Can I choose between monthly and annual billing?",
+    "docs": [
+      "Payment Policy: All courses must be paid before full access is granted.",
+      "Subscription Model: Users can subscribe monthly or annually to access platform content.",
+      "Refund Policy: Refunds are available within 14 days if less than 20 percent of course content has been accessed."
+    ],
+    "expected_answer": "Yes. Users can subscribe monthly or annually."
+  },
+  {
+    "question": "What kind of content is found in each lesson?",
+    "docs": [
+      "Lesson Format: Lessons include video content, quizzes, and practice exercises.",
+      "Exercise System: Each lesson includes interactive exercises to reinforce learning.",
+      "Reading Practice Policy: Reading exercises include articles, stories, and comprehension tests."
+    ],
+    "expected_answer": "Video content, quizzes, practice exercises, and interactive exercises."
+  },
+  {
+    "question": "What does the writing part of the exam involve?",
+    "docs": [
+      "Writing Course Description: Writing courses develop grammar accuracy, sentence structure, paragraph writing, essay writing, and formal communication skills.",
+      "Exam Structure Details: Exams include multiple choice questions, writing tasks, listening comprehension, and oral evaluation.",
+      "Writing Practice Policy: Writing tasks include essays, summaries, and structured paragraphs."
+    ],
+    "expected_answer": "The exam includes writing tasks."
+  },
+  {
+    "question": "How does the platform track my progress?",
+    "docs": [
+      "Course Completion Rules: A course is marked complete when all lessons and assessments are finished.",
+      "Learning Analytics: The platform tracks student progress across all four skills to provide personalized recommendations.",
+      "Progress Tracking System: Student progress is measured by completed lessons, quiz scores, and exam results."
+    ],
+    "expected_answer": "By completed lessons, quiz scores, and exam results, tracked across all four skills."
+  },
+  {
+    "question": "Is all vocabulary taught at A1?",
+    "docs": [
+      "A1 Level Description: Beginner level where learners understand and use basic everyday expressions and simple sentences.",
+      "Grammar Learning Policy: Grammar is taught from simple structures in A1 to complex forms in C2.",
+      "Vocabulary Development Policy: Vocabulary is introduced progressively across all levels."
+    ],
+    "expected_answer": "No. Vocabulary is introduced progressively across all levels."
+  },
+  {
+    "question": "Which level lets learners understand virtually everything?",
+    "docs": [
+      "C2 Level Description: Proficiency level where learners can understand virtually everything and express themselves naturally like native speakers.",
+      "C1 Level Description: Advanced level where learners can understand complex texts and express ideas fluently and precisely.",
+      "B2 Level Description: Upper-intermediate level where learners can interact fluently and produce detailed written and spoken content."
+    ],
+    "expected_answer": "C2."
+  },
+  {
+    "question": "Which level lets learners express opinions on familiar topics?",
+    "docs": [
+      "B2 Level Description: Upper-intermediate level where learners can interact fluently and produce detailed written and spoken content.",
+      "B1 Level Description: Intermediate level where learners can handle everyday situations and express opinions on familiar topics.",
+      "A2 Level Description: Elementary level where learners can communicate simple tasks and routine information."
+    ],
+    "expected_answer": "B1."
+  },
+  {
+    "question": "Can I use the platform on my phone?",
+    "docs": [
+      "Technical Support Policy: Users can contact support for login issues, payment problems, or technical bugs.",
+      "Platform Availability: The platform is available 24/7 except during maintenance periods.",
+      "Mobile Access Policy: The platform supports mobile, tablet, and desktop devices."
+    ],
+    "expected_answer": "Yes. The platform supports mobile, tablet, and desktop devices."
+  },
+  {
+    "question": "Can someone else log in with my credentials?",
+    "docs": [
+      "Privacy Policy: User data is stored securely and encrypted. Personal information is never sold or shared with third parties except when required by law.",
+      "User Account Policy: Users must register with a valid email address. Each user is allowed one account only. Sharing accounts or credentials is strictly prohibited.",
+      "Security Guidelines: Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension."
+    ],
+    "expected_answer": "No. Sharing accounts or credentials is strictly prohibited."
+  },
+  {
+    "question": "Will my data be shared with advertisers?",
+    "docs": [
+      "Content Protection Policy: All course materials are protected and cannot be redistributed.",
+      "User Account Policy: Users must register with a valid email address. Each user is allowed one account only. Sharing accounts or credentials is strictly prohibited.",
+      "Privacy Policy: User data is stored securely and encrypted. Personal information is never sold or shared with third parties except when required by law."
+    ],
+    "expected_answer": "No. Personal information is never sold or shared with third parties except when required by law."
+  },
+  {
+    "question": "How are quiz scores used on the platform?",
+    "docs": [
+      "Progress Tracking System: Student progress is measured by completed lessons, quiz scores, and exam results.",
+      "Grading System: Grades are calculated from exams, quizzes, assignments, and participation activities.",
+      "Lesson Format: Lessons include video content, quizzes, and practice exercises."
+    ],
+    "expected_answer": "They contribute to grades and are used to measure student progress."
+  },
+  {
+    "question": "I scored 65 percent on my level exam. What now?",
+    "docs": [
+      "Certification Policy: Certificates are awarded after completing all courses and passing the final exam.",
+      "Exam Retake Policy: Students may retake a failed exam after a waiting period of 14 days.",
+      "Exam Passing Criteria: Students must achieve at least 70 percent to pass the level exam."
+    ],
+    "expected_answer": "You did not pass (70 percent needed). You can retake the exam after 14 days."
+  },
+  {
+    "question": "I paid for a course 2 days ago and have not opened any content. Can I get a refund?",
+    "docs": [
+      "Payment Policy: All courses must be paid before full access is granted.",
+      "Subscription Model: Users can subscribe monthly or annually to access platform content.",
+      "Refund Policy: Refunds are available within 14 days if less than 20 percent of course content has been accessed."
+    ],
+    "expected_answer": "Yes. It is within 14 days and less than 20 percent of the content was accessed."
+  },
+  {
+    "question": "How should students approach studying?",
+    "docs": [
+      "Skill Balance Policy: Students are encouraged to balance all four skills equally.",
+      "Attendance Policy: Consistent participation improves learning outcomes and retention.",
+      "Student Study Recommendations: Students are encouraged to study daily and revise previous lessons regularly."
+    ],
+    "expected_answer": "Study daily, revise previous lessons regularly, participate consistently, and balance all four skills."
+  },
+  {
+    "question": "Do all levels have the same set of courses?",
+    "docs": [
+      "A1 Level Description: Beginner level where learners understand and use basic everyday expressions and simple sentences.",
+      "Course Structure Overview: Each CEFR level (A1-C2) contains four skill courses: Reading, Writing, Listening, and Speaking.",
+      "C2 Level Description: Proficiency level where learners can understand virtually everything and express themselves naturally like native speakers."
+    ],
+    "expected_answer": "Yes. Each level from A1 to C2 contains Reading, Writing, Listening, and Speaking courses."
+  },
+  {
+    "question": "How do instructors support students?",
+    "docs": [
+      "Instructor Responsibilities: Instructors must provide accurate educational content and respond to student questions professionally.",
+      "Technical Support Policy: Users can contact support for login issues, payment problems, or technical bugs.",
+      "Instructor Evaluation Policy: Instructor performance is evaluated based on student feedback and engagement metrics."
+    ],
+    "expected_answer": "They provide accurate content and respond to student questions professionally."
+  },
+  {
+    "question": "How does the platform simulate real conversations?",
+    "docs": [
+      "Speaking Course Description: Speaking courses focus on fluency, pronunciation, vocabulary usage, and interactive communication.",
+      "Lesson Format: Lessons include video content, quizzes, and practice exercises.",
+      "Speaking Practice Policy: Speaking practice includes pronunciation exercises and conversation simulations."
+    ],
+    "expected_answer": "Speaking practice includes conversation simulations along with pronunciation exercises."
+  },
+  {
+    "question": "Are instructors required to follow the CEFR standards?",
+    "docs": [
+      "Instructor Content Guidelines: Instructors must ensure content aligns with CEFR standards and platform curriculum.",
+      "Course Structure Overview: Each CEFR level (A1-C2) contains four skill courses: Reading, Writing, Listening, and Speaking.",
+      "Instructor Evaluation Policy: Instructor performance is evaluated based on student feedback and engagement metrics."
+    ],
+    "expected_answer": "Yes. Instructors must ensure content aligns with CEFR standards and the platform curriculum."
+  },
+  {
+    "question": "What happens to a student who spams other users?",
+    "docs": [
+      "Community Guidelines: Respectful communication is required. Harassment, spam, or offensive behavior will result in account restrictions.",
+      "Security Guidelines: Users should use strong passwords and avoid sharing login credentials. Suspicious activity may lead to temporary account suspension.",
+      "Anti-Cheating Policy: Cheating during exams or quizzes will result in penalties or account suspension."
+    ],
+    "expected_answer": "Spam results in account restrictions."
+  },
+  {
+    "question": "What is the minimum percentage required in the exam, and how long must I wait if I fail?",
+    "docs": [
+      "Exam Passing Criteria: Students must achieve at least 70 percent to pass the level exam.",
+      "Exam Overview: Each level includes a final exam evaluating all four skills: reading, writing, listening, and speaking.",
+      "Exam Retake Policy: Students may retake a failed exam after a waiting period of 14 days."
+    ],
+    "expected_answer": "You need at least 70 percent to pass; if you fail, you must wait 14 days before retaking."
+  },
+  {
+    "question": "How much does the monthly subscription cost?",
+    "docs": [
+      "Payment Policy: All courses must be paid before full access is granted.",
+      "Refund Policy: Refunds are available within 14 days if less than 20 percent of course content has been accessed.",
+      "Subscription Model: Users can subscribe monthly or annually to access platform content."
+    ],
+    "expected_answer": "The knowledge base does not contain this information."
+  },
+  {
+    "question": "Does the platform teach languages other than English?",
+    "docs": [
+      "Course Structure Overview: Each CEFR level (A1-C2) contains four skill courses: Reading, Writing, Listening, and Speaking.",
+      "A1 Level Description: Beginner level where learners understand and use basic everyday expressions and simple sentences.",
+      "Platform Overview: This platform is an AI-powered English learning system offering structured courses from A1 to C2 based on CEFR standards. It includes courses, exams, progress tracking, and instructor support."
+    ],
+    "expected_answer": "The knowledge base does not contain this information."
+  },
+  {
+    "question": "What is the phone number of technical support?",
+    "docs": [
+      "Instructor Communication Rules: All communication must be done through official platform channels.",
+      "Technical Support Policy: Users can contact support for login issues, payment problems, or technical bugs.",
+      "Platform Availability: The platform is available 24/7 except during maintenance periods."
+    ],
+    "expected_answer": "The knowledge base does not contain this information."
+  },
+  {
+    "question": "How long does each exam last?",
+    "docs": [
+      "Exam Structure Details: Exams include multiple choice questions, writing tasks, listening comprehension, and oral evaluation.",
+      "Exam Overview: Each level includes a final exam evaluating all four skills: reading, writing, listening, and speaking.",
+      "Exam Passing Criteria: Students must achieve at least 70 percent to pass the level exam."
+    ],
+    "expected_answer": "The knowledge base does not contain this information."
+  },
+  {
+    "question": "Can I pause my subscription temporarily?",
+    "docs": [
+      "Payment Policy: All courses must be paid before full access is granted.",
+      "Subscription Model: Users can subscribe monthly or annually to access platform content.",
+      "Refund Policy: Refunds are available within 14 days if less than 20 percent of course content has been accessed."
+    ],
+    "expected_answer": "The knowledge base does not contain this information."
+  },
+  {
+    "question": "Does the platform offer live classes with instructors?",
+    "docs": [
+      "Instructor Communication Rules: All communication must be done through official platform channels.",
+      "Lesson Format: Lessons include video content, quizzes, and practice exercises.",
+      "Instructor Responsibilities: Instructors must provide accurate educational content and respond to student questions professionally."
+    ],
+    "expected_answer": "The knowledge base does not contain this information."
+  }
+]
