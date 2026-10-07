@@ -1,14 +1,14 @@
-from langchain_google_genai import   ChatGoogleGenerativeAI
 import os
 from dotenv import load_dotenv
 from pydantic import BaseModel
 import json
 import uuid
 import os
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_mistralai import ChatMistralAI , MistralAIEmbeddings
 import os 
 from dotenv import load_dotenv
-
+load_dotenv()
+os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN")
 USER_FILE = "user.json"
 def load_id():
    
@@ -29,13 +29,6 @@ class Answer(BaseModel):
     add_to_db : bool
     tools_used: list[str]
 load_dotenv()
-key = os.environ.get("GOOGLE_API_KEY")
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash" , api_key =key , temperature=0.2 ,  max_retries=2)
-
-
-embed_key = os.environ.get("EMBEDDING")
-embeddings = GoogleGenerativeAIEmbeddings(
-    model="gemini-embedding-2-preview" , 
-    output_dimensionality = 500 ,
-    task_type = "RETRIEVAL_DOCUMENT" , 
-    api_key = embed_key)
+key = os.getenv("MISTRAL_API_KEY")
+llm = ChatMistralAI(model="open-mistral-7b",api_key= key)
+embeddings = MistralAIEmbeddings(model="mistral-embed",api_key= key)
