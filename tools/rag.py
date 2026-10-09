@@ -2,12 +2,9 @@ from langchain_chroma import Chroma
 from langchain_core.messages import HumanMessage , SystemMessage
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import PromptTemplate
-import os
-from dotenv import load_dotenv
 from langchain.tools import tool
 from pydantic import BaseModel
 from utils import llm  , embeddings
-load_dotenv()
 #=======================================
 
 
